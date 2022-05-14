@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { space, layout, variant, color, typography } from 'styled-system'
 import { LayoutProps, SpaceProps, ColorProps, TypographyProps } from 'styled-system'
 
