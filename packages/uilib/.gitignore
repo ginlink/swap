@@ -8,11 +8,11 @@ node_modules
 .vscode
 
 # testing
-coverage
+/coverage
 
 # production
-build
-dist
+/build
+/dist
 
 # misc
 .DS_Store

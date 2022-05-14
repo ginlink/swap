@@ -1,4 +1,4 @@
-import { css } from 'styled-components/macro'
+import { css } from 'styled-components'
 import { MediaQueries, Breakpoints, Spacing, Shadows, Radii, ZIndices } from './types'
 
 export const breakpointMap: { [key: string]: number } = {

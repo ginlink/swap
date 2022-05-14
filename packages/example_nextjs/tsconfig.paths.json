@@ -1,12 +1,13 @@
 {
-  "extends": "./tsconfig.build.json",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
       "@ginlink/*": [
-        "./packages/*/src"
+        "../../packages/*/src"
       ],
-    },
-    "noEmit": true
+      "@/*": [
+        "./src/*"
+      ]
+    }
   }
 }
