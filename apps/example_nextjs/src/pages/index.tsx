@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box } from '@ginlink/uilib'
 import { Hello } from '@/components/Hello'
-import { SentryTest } from '@/components/Test'
+import { SentryTest, TestResponsive } from '@/components/Test'
 
 export default function index() {
   return (
@@ -9,6 +9,8 @@ export default function index() {
       <Hello />
 
       <SentryTest />
+
+      <TestResponsive />
     </Box>
   )
 }
