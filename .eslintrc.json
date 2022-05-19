@@ -1,5 +1,6 @@
 {
   "extends": [
-    "@ginlink/eslint-config"
+    "@ginlink/eslint-config",
+    "plugin:react/jsx-runtime"
   ]
 }
