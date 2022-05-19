@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import { space, variant as systemVariant } from 'styled-system'
 import variants from './theme'
