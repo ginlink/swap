@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@ginlink/*": [
+        "../../../packages/*/src"
+      ],
+      "@/*": [
+        "./*"
+      ]
+    }
+  }
+}
