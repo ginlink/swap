@@ -11,6 +11,7 @@
     "apps/*"
   ],
   "scripts": {
+    "start": "lerna run start",
     "bootstrap": "lerna bootstrap",
     "lint": "eslint './packages/uilib/src/**/*.{js,jsx,ts,tsx}'"
   },

@@ -19,7 +19,7 @@
     "tsconfig-paths-webpack-plugin": "~3.5.0"
   },
   "scripts": {
-    "start": "cross-env SKIP_PREFLIGHT_CHECK=true craco start",
+    "start": "cross-env SKIP_PREFLIGHT_CHECK=true PORT=9002 craco start",
     "build": "cross-env SKIP_PREFLIGHT_CHECK=true craco build",
     "test": "cross-env SKIP_PREFLIGHT_CHECK=true craco test --watchAll=false"
   },
