@@ -202,6 +202,7 @@ function useFormattedProposalCreatedLogs(
               ;[name, types] = sig.substring(0, sig.length - 1).split('(')
               calldata = `0x${calldata.slice(10)}`
             } else {
+              // eslint-disable-next-line @typescript-eslint/no-extra-semi
               ;[name, types] = signature.substring(0, signature.length - 1).split('(')
             }
             const decoded = defaultAbiCoder.decode(types.split(','), calldata)

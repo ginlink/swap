@@ -40,7 +40,8 @@
     "build:test": "dotenv -e .env.test craco build",
     "build:prod": "dotenv -e .env.production craco build",
     "test": "cross-env SKIP_PREFLIGHT_CHECK=true craco test --env=./custom-test-env.cjs",
-    "test:e2e": "start-server-and-test 'serve build -l 3000' http://localhost:3000 'cypress run --record'"
+    "test:e2e": "start-server-and-test 'serve build -l 3000' http://localhost:3000 'cypress run --record'",
+    "lint": "eslint --fix src/**/**.(ts|tsx)"
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.17.0",
