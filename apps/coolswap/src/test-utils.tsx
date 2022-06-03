@@ -1,5 +1,5 @@
 import { render, RenderOptions } from '@testing-library/react'
-import React, { FC, ReactElement, ReactNode } from 'react'
+import { FC, ReactElement, ReactNode } from 'react'
 import { Provider } from 'react-redux'
 import store from 'state'
 import ThemeProvider from 'theme'

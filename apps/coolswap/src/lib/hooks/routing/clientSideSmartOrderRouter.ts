@@ -13,7 +13,6 @@ export const AUTO_ROUTER_SUPPORTED_CHAINS: ChainId[] = Object.values(ChainId).fi
 async function getQuote(
   {
     type,
-    chainId,
     tokenIn,
     tokenOut,
     amount: amountRaw,
