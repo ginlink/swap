@@ -2,6 +2,7 @@
 yarn
 
 yarn prepare:swap
+yarn lint:swap
 yarn build:test:swap
 
 docker build -f apps/coolswap/Dockerfile -t ginlink/coolswap:dev .

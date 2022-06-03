@@ -33,4 +33,4 @@ jobs:
             node_modules
             */*/node_modules
           key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
-      - run: ./sh/swap_build_dev.sh && ./sh/swap_deploy_dev_to_110.99.99.sh
+      - run: ./sh/swap_build_dev.sh && ./sh/swap_deploy_dev_to_110.99.sh
