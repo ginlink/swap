@@ -1,0 +1,33 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: swap_deploy_dev
+
+on:
+  workflow_dispatch:
+    branches:
+      - main
+
+env:
+  DOCKER_ACCESS_TOKEN: ${{ secrets.DOCKER_ACCESS_TOKEN }}
+  DOCKER_ACCESS_NAME: ${{ secrets.DOCKER_ACCESS_NAME }}
+  PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+  HOST_IP_99: ${{ secrets.HOST_IP_99 }}
+  HOST_ADMIN_99: ${{ secrets.HOST_ADMIN_99 }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: deploy
+      - run: ./sh/swap_deploy_dev_to_110.99.sh
