@@ -228,7 +228,7 @@ const getParsedChainId = (parsedQs?: ParsedQs) => {
 }
 
 const getChainIdFromName = (name: string) => {
-  const entry = Object.entries(CHAIN_IDS_TO_NAMES).find(([_, n]) => n === name)
+  const entry = Object.entries(CHAIN_IDS_TO_NAMES).find(([, n]) => n === name)
   const chainId = entry?.[0]
   return chainId ? parseInt(chainId) : undefined
 }
