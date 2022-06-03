@@ -4,6 +4,7 @@ import { Currency, Token } from '@uniswap/sdk-core'
 import { SupportedChainId } from './chains'
 import {
   AMPL,
+  COOL,
   DAI,
   DAI_ARBITRUM_ONE,
   DAI_OPTIMISM,
@@ -18,6 +19,7 @@ import {
   sETH2,
   SWISE,
   TRIBE,
+  USDC,
   USDC_ARBITRUM,
   USDC_MAINNET,
   USDC_OPTIMISM,
@@ -77,6 +79,10 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     USDC_POLYGON,
     USDT_POLYGON,
     WETH_POLYGON,
+  ],
+  [SupportedChainId.KCC_TEST]: [
+    ...WRAPPED_NATIVE_CURRENCIES_ONLY[SupportedChainId.KCC_TEST],
+    USDC[SupportedChainId.KCC_TEST],
   ],
 }
 export const ADDITIONAL_BASES: { [chainId: number]: { [tokenAddress: string]: Token[] } } = {
@@ -163,6 +169,12 @@ export const COMMON_BASES: ChainCurrencyList = {
     WRAPPED_NATIVE_CURRENCY[SupportedChainId.POLYGON_MUMBAI] as Token,
     WETH_POLYGON_MUMBAI,
   ],
+  [SupportedChainId.KCC_TEST]: [
+    nativeOnChain(SupportedChainId.KCC_TEST),
+    WRAPPED_NATIVE_CURRENCY[SupportedChainId.KCC_TEST] as Token,
+    USDC[SupportedChainId.KCC_TEST],
+    COOL[SupportedChainId.KCC_TEST],
+  ],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
@@ -174,6 +186,10 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
     USDC_MAINNET,
     USDT,
     WBTC,
+  ],
+  [SupportedChainId.KCC_TEST]: [
+    ...WRAPPED_NATIVE_CURRENCIES_ONLY[SupportedChainId.KCC_TEST],
+    USDC[SupportedChainId.KCC_TEST],
   ],
 }
 export const PINNED_PAIRS: { readonly [chainId: number]: [Token, Token][] } = {

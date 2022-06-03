@@ -4,7 +4,7 @@ import tryParseCurrencyAmount from 'lib/utils/tryParseCurrencyAmount'
 import { useMemo, useRef } from 'react'
 
 import { SupportedChainId } from '../constants/chains'
-import { DAI_OPTIMISM, USDC_ARBITRUM, USDC_MAINNET, USDC_POLYGON } from '../constants/tokens'
+import { DAI_OPTIMISM, USDC, USDC_ARBITRUM, USDC_MAINNET, USDC_POLYGON } from '../constants/tokens'
 import { useBestV2Trade } from './useBestV2Trade'
 import { useClientSideV3Trade } from './useClientSideV3Trade'
 
@@ -15,6 +15,7 @@ export const STABLECOIN_AMOUNT_OUT: { [chainId: number]: CurrencyAmount<Token> }
   [SupportedChainId.ARBITRUM_ONE]: CurrencyAmount.fromRawAmount(USDC_ARBITRUM, 10_000e6),
   [SupportedChainId.OPTIMISM]: CurrencyAmount.fromRawAmount(DAI_OPTIMISM, 10_000e18),
   [SupportedChainId.POLYGON]: CurrencyAmount.fromRawAmount(USDC_POLYGON, 10_000e6),
+  [SupportedChainId.KCC_TEST]: CurrencyAmount.fromRawAmount(USDC[SupportedChainId.KCC_TEST], 10_000e6),
 }
 
 /**

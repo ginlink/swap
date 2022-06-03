@@ -11,6 +11,7 @@
     "apps/*"
   ],
   "scripts": {
+    "start": "lerna run start",
     "bootstrap": "lerna bootstrap",
     "lint": "eslint './packages/uilib/src/**/*.{js,jsx,ts,tsx}'"
   },
@@ -33,6 +34,8 @@
   "resolutions": {
     "babel-loader": "8.1.0",
     "@types/react": "^17.0.1",
-    "@web3-react/abstract-connector": "^6.0.7"
+    "@web3-react/abstract-connector": "^6.0.7",
+    "@uniswap/sdk-core": "npm:@ginlink/uni-sdk-core@^0.1.1",
+    "@uniswap/v2-sdk": "npm:@ginlink/uni-v2-sdk@^0.1.1"
   }
 }

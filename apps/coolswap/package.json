@@ -34,7 +34,7 @@
     "i18n:compile": "yarn i18n:extract && lingui compile",
     "i18n:pseudo": "lingui extract --locale pseudo && lingui compile",
     "prepare": "yarn contracts:compile && yarn graphql:generate && yarn i18n:compile",
-    "start": "cross-env SKIP_PREFLIGHT_CHECK=true craco start",
+    "start": "cross-env SKIP_PREFLIGHT_CHECK=true PORT=9001 craco start",
     "build": "cross-env SKIP_PREFLIGHT_CHECK=true craco build",
     "test": "cross-env SKIP_PREFLIGHT_CHECK=true craco test --env=./custom-test-env.cjs",
     "test:e2e": "start-server-and-test 'serve build -l 3000' http://localhost:3000 'cypress run --record'"

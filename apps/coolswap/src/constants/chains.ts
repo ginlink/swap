@@ -16,6 +16,8 @@ export enum SupportedChainId {
 
   POLYGON = 137,
   POLYGON_MUMBAI = 80001,
+
+  KCC_TEST = 322,
 }
 
 export const CHAIN_IDS_TO_NAMES = {
@@ -30,14 +32,13 @@ export const CHAIN_IDS_TO_NAMES = {
   [SupportedChainId.ARBITRUM_RINKEBY]: 'arbitrum_rinkeby',
   [SupportedChainId.OPTIMISM]: 'optimism',
   [SupportedChainId.OPTIMISTIC_KOVAN]: 'optimistic_kovan',
+  [SupportedChainId.KCC_TEST]: 'kcc_test',
 }
 
 /**
  * Array of all the supported chain IDs
  */
-export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = Object.values(SupportedChainId).filter(
-  (id) => typeof id === 'number'
-) as SupportedChainId[]
+export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = [SupportedChainId.KCC_TEST] as SupportedChainId[]
 
 export const SUPPORTED_GAS_ESTIMATE_CHAIN_IDS = [
   SupportedChainId.MAINNET,

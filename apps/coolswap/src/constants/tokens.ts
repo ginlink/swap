@@ -122,6 +122,22 @@ export const USDC: { [chainId in SupportedChainId]: Token } = {
   [SupportedChainId.RINKEBY]: USDC_RINKEBY,
   [SupportedChainId.KOVAN]: USDC_KOVAN,
   [SupportedChainId.ROPSTEN]: USDC_ROPSTEN,
+  [SupportedChainId.KCC_TEST]: new Token(
+    SupportedChainId.KCC_TEST,
+    '0x1153335a3c0f3c2036d239f3a378aa149101d569',
+    18,
+    'USDC',
+    'USDC'
+  ),
+}
+export const COOL: { [chainId: number]: Token } = {
+  [SupportedChainId.KCC_TEST]: new Token(
+    SupportedChainId.KCC_TEST,
+    '0x21F1a57A6645A172C8F493D5854f92AAaF59C90A',
+    18,
+    'COOL',
+    'COOL Token'
+  ),
 }
 export const DAI_POLYGON = new Token(
   SupportedChainId.POLYGON,
@@ -377,5 +393,6 @@ export const TOKEN_SHORTHANDS: { [shorthand: string]: { [chainId in SupportedCha
     [SupportedChainId.RINKEBY]: USDC_RINKEBY.address,
     [SupportedChainId.KOVAN]: USDC_KOVAN.address,
     [SupportedChainId.ROPSTEN]: USDC_ROPSTEN.address,
+    [SupportedChainId.KCC_TEST]: USDC[SupportedChainId.KCC_TEST].address,
   },
 }

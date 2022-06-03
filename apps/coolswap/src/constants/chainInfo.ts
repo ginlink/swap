@@ -166,4 +166,15 @@ export const CHAIN_INFO: ChainInfoMap = {
     logoUrl: polygonMaticLogo,
     nativeCurrency: { name: 'Polygon Mumbai Matic', symbol: 'mMATIC', decimals: 18 },
   },
+  [SupportedChainId.KCC_TEST]: {
+    networkType: NetworkType.L1,
+    blockWaitMsBeforeWarning: ms`10m`,
+    bridge: '',
+    docs: '',
+    explorer: 'https://scan-testnet.kcc.network/',
+    infoLink: 'https://scan-testnet.kcc.network/',
+    label: 'Kcc Testnet',
+    logoUrl: polygonMaticLogo,
+    nativeCurrency: { name: 'KCS Token', symbol: 'tKCS', decimals: 18 },
+  },
 }
