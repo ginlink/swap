@@ -34,8 +34,11 @@
     "i18n:compile": "yarn i18n:extract && lingui compile",
     "i18n:pseudo": "lingui extract --locale pseudo && lingui compile",
     "prepare": "yarn contracts:compile && yarn graphql:generate && yarn i18n:compile",
-    "start": "cross-env SKIP_PREFLIGHT_CHECK=true PORT=9001 craco start",
-    "build": "cross-env SKIP_PREFLIGHT_CHECK=true craco build",
+    "start": "yarn contracts:compile:abi && dotenv -e .env.development craco start",
+    "build": "yarn build:prod",
+    "build:dev": "yarn contracts:compile:abi && yarn i18n:extract && dotenv -e .env.development craco build",
+    "build:test": "yarn contracts:compile:abi && yarn i18n:extract && dotenv -e .env.test craco build",
+    "build:prod": "yarn contracts:compile:abi && yarn i18n:extract && dotenv -e .env.production craco build",
     "test": "cross-env SKIP_PREFLIGHT_CHECK=true craco test --env=./custom-test-env.cjs",
     "test:e2e": "start-server-and-test 'serve build -l 3000' http://localhost:3000 'cypress run --record'"
   },
@@ -149,7 +152,8 @@
     "web3-react-walletlink-connector": "npm:@web3-react/walletlink-connector@^6.2.13",
     "workbox-core": "^6.1.0",
     "workbox-precaching": "^6.1.0",
-    "workbox-routing": "^6.1.0"
+    "workbox-routing": "^6.1.0",
+    "dotenv-cli": "^5.1.0"
   },
   "resolutions": {
     "@walletconnect/ethereum-provider": "1.7.1"
