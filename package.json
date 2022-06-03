@@ -13,7 +13,12 @@
   "scripts": {
     "start": "lerna run start",
     "bootstrap": "lerna bootstrap",
-    "lint": "eslint './packages/uilib/src/**/*.{js,jsx,ts,tsx}'"
+    "lint": "eslint './packages/uilib/src/**/*.{js,jsx,ts,tsx}'",
+    "start:swap": "yarn --cwd apps/coolswap start",
+    "start:uilib": "yarn --cwd packages/uilib start",
+    "build:dev:swap": "yarn --cwd apps/coolswap build:dev",
+    "build:test:swap": "yarn --cwd apps/coolswap build:test",
+    "build:prod:swap": "yarn --cwd apps/coolswap build:prod"
   },
   "repository": {},
   "keywords": [],

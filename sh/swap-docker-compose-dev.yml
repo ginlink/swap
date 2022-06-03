@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  coolswap:
+    image: ginlink/coolswap:dev
+    container_name: coolswap_dev
+    restart: always
+    ports:
+      - '3081:80'
+    privileged: true
+
+networks:
+  lend_default:
+    driver: bridge
