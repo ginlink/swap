@@ -13,8 +13,8 @@
   "scripts": {
     "start": "lerna run start",
     "bootstrap": "lerna bootstrap",
-    "lint:uilib": "eslint './packages/uilib/src/**/*.{js,jsx,ts,tsx}'",
-    "lint:swap": "eslint 'apps/coolswap/src/**/*.{js,jsx,ts,tsx}'",
+    "lint:uilib": "eslint --fix './packages/uilib/src/**/*.{js,jsx,ts,tsx}'",
+    "lint:swap": "eslint --fix 'apps/coolswap/src/**/*.{js,jsx,ts,tsx}'",
     "prepare:swap": "yarn --cwd apps/coolswap prepare",
     "start:swap": "yarn --cwd apps/coolswap start",
     "start:uilib": "yarn --cwd packages/uilib start",

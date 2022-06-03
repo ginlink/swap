@@ -11,6 +11,9 @@ on:
 env:
   DOCKER_ACCESS_TOKEN: ${{ secrets.DOCKER_ACCESS_TOKEN }}
   DOCKER_ACCESS_NAME: ${{ secrets.DOCKER_ACCESS_NAME }}
+  PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+  HOST_IP_99: ${{ secrets.HOST_IP_99 }}
+  HOST_ADMIN_99: ${{ secrets.HOST_ADMIN_99 }}
 
 jobs:
   build:
