@@ -4,6 +4,7 @@ import { Currency, Token } from '@uniswap/sdk-core'
 import { SupportedChainId } from './chains'
 import {
   AMPL,
+  COOL,
   DAI,
   DAI_ARBITRUM_ONE,
   DAI_OPTIMISM,
@@ -167,6 +168,12 @@ export const COMMON_BASES: ChainCurrencyList = {
     nativeOnChain(SupportedChainId.POLYGON_MUMBAI),
     WRAPPED_NATIVE_CURRENCY[SupportedChainId.POLYGON_MUMBAI] as Token,
     WETH_POLYGON_MUMBAI,
+  ],
+  [SupportedChainId.KCC_TEST]: [
+    nativeOnChain(SupportedChainId.KCC_TEST),
+    WRAPPED_NATIVE_CURRENCY[SupportedChainId.KCC_TEST] as Token,
+    USDC[SupportedChainId.KCC_TEST],
+    COOL[SupportedChainId.KCC_TEST],
   ],
 }
 
