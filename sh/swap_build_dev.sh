@@ -1,5 +1,5 @@
 #!/bin/sh
-yarn bootstrap
+yarn
 
 yarn build:test:swap
 
