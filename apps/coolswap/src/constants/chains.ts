@@ -45,6 +45,7 @@ export const SUPPORTED_GAS_ESTIMATE_CHAIN_IDS = [
   SupportedChainId.POLYGON,
   SupportedChainId.OPTIMISM,
   SupportedChainId.ARBITRUM_ONE,
+  SupportedChainId.KCC_TEST,
 ]
 
 /**
@@ -74,3 +75,7 @@ export const L2_CHAIN_IDS = [
 ] as const
 
 export type SupportedL2ChainId = typeof L2_CHAIN_IDS[number]
+
+export const BASE_SCAN_URLS = {
+  [SupportedChainId.KCC_TEST]: 'https://scan-testnet.kcc.network',
+}

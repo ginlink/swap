@@ -1,13 +1,14 @@
+import { setupNetwork } from '@/constants/wallet'
 import type { EthereumProvider } from 'lib/ethereum'
 import { useEffect, useState } from 'react'
-import { useWeb3React } from 'web3-react-core'
+import { UnsupportedChainIdError, useWeb3React } from 'web3-react-core'
 
 import { gnosisSafe, injected } from '../connectors'
 import { IS_IN_IFRAME } from '../constants/misc'
 import { isMobile } from '../utils/userAgent'
 
 export function useEagerConnect() {
-  const { activate, active } = useWeb3React()
+  const { activate, active, library } = useWeb3React()
   const [tried, setTried] = useState(false)
 
   // gnosisSafe.isSafeApp() races a timeout against postMessage, so it delays pageload if we are not in a safe app;
@@ -35,7 +36,10 @@ export function useEagerConnect() {
     if (!active && triedSafe) {
       injected.isAuthorized().then((isAuthorized) => {
         if (isAuthorized) {
-          activate(injected, undefined, true).catch(() => {
+          activate(injected, undefined, true).catch((error: Error) => {
+            if (error instanceof UnsupportedChainIdError) {
+              setupNetwork(library)
+            }
             setTried(true)
           })
         } else {
@@ -49,7 +53,7 @@ export function useEagerConnect() {
         }
       })
     }
-  }, [activate, active, triedSafe])
+  }, [activate, active, library, triedSafe])
 
   // wait until we get confirmation of a connection to flip the flag
   useEffect(() => {

@@ -175,6 +175,6 @@ export const CHAIN_INFO: ChainInfoMap = {
     infoLink: 'https://scan-testnet.kcc.network/',
     label: 'Kcc Testnet',
     logoUrl: polygonMaticLogo,
-    nativeCurrency: { name: 'KCS Token', symbol: 'tKCS', decimals: 18 },
+    nativeCurrency: { name: 'tKCS Token', symbol: 'tKCS', decimals: 18 },
   },
 }

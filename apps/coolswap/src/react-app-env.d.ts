@@ -15,6 +15,7 @@ interface Window {
     isMetaMask?: true
     isTally?: false
     autoRefreshOnNetworkChange?: boolean
+    request?: (...args: any[]) => Promise<void>
   }
   web3?: Record<string, unknown>
 }
