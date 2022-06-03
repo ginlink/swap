@@ -1,7 +1,7 @@
 #!/bin/sh
-# yarn bootstrap
+yarn bootstrap
 
-# yarn build:test:swap
+yarn build:test:swap
 
 docker build -f apps/coolswap/Dockerfile -t ginlink/coolswap:dev .
 
