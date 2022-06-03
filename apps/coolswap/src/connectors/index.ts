@@ -15,7 +15,7 @@ const FORMATIC_KEY = process.env.REACT_APP_FORTMATIC_KEY
 
 export const network = new NetworkConnector({
   urls: INFURA_NETWORK_URLS,
-  defaultChainId: 1,
+  defaultChainId: SupportedChainId.KCC_TEST,
 })
 
 let networkLibrary: Web3Provider | undefined

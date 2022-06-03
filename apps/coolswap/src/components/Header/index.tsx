@@ -265,7 +265,7 @@ export default function Header() {
   const {
     infoLink,
     nativeCurrency: { symbol: nativeCurrencySymbol },
-  } = CHAIN_INFO[chainId ? chainId : SupportedChainId.MAINNET]
+  } = CHAIN_INFO[chainId ? chainId : SupportedChainId.KCC_TEST]
 
   return (
     <HeaderFrame showBackground={scrollY > 45}>
