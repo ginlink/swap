@@ -36,9 +36,9 @@
     "prepare": "yarn contracts:compile && yarn graphql:generate && yarn i18n:compile",
     "start": "yarn contracts:compile:abi && dotenv -e .env.development craco start",
     "build": "yarn build:prod",
-    "build:dev": "yarn contracts:compile:abi && yarn i18n:extract && dotenv -e .env.development craco build",
-    "build:test": "yarn contracts:compile:abi && yarn i18n:extract && dotenv -e .env.test craco build",
-    "build:prod": "yarn contracts:compile:abi && yarn i18n:extract && dotenv -e .env.production craco build",
+    "build:dev": "dotenv -e .env.development craco build",
+    "build:test": "dotenv -e .env.test craco build",
+    "build:prod": "dotenv -e .env.production craco build",
     "test": "cross-env SKIP_PREFLIGHT_CHECK=true craco test --env=./custom-test-env.cjs",
     "test:e2e": "start-server-and-test 'serve build -l 3000' http://localhost:3000 'cypress run --record'"
   },
