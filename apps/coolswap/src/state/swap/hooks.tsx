@@ -19,6 +19,7 @@ import { AppState } from '../index'
 import { useCurrencyBalances } from '../wallet/hooks'
 import { Field, replaceSwapState, selectCurrency, setRecipient, switchCurrencies, typeInput } from './actions'
 import { SwapState } from './reducer'
+import { useBestV2Trade } from '@/hooks/useBestV2Trade'
 
 export function useSwapState(): AppState['swap'] {
   return useAppSelector((state) => state.swap)
@@ -118,6 +119,29 @@ export function useDerivedSwapInfo(): {
     parsedAmount,
     (isExactIn ? outputCurrency : inputCurrency) ?? undefined
   )
+  const v2Trade = useBestV2Trade(
+    isExactIn ? TradeType.EXACT_INPUT : TradeType.EXACT_OUTPUT,
+    parsedAmount,
+    (isExactIn ? outputCurrency : inputCurrency) ?? undefined
+  )
+
+  const v2TradeAdapter = useMemo(() => {
+    if (!v2Trade) return
+
+    const { tradeType, route: bestRoute, inputAmount: amountIn, outputAmount: amountOut } = v2Trade
+
+    return new InterfaceTrade({
+      v2Routes: [
+        {
+          routev2: bestRoute,
+          inputAmount: amountIn,
+          outputAmount: amountOut,
+        },
+      ],
+      v3Routes: [],
+      tradeType,
+    })
+  }, [v2Trade])
 
   const currencyBalances = useMemo(
     () => ({
@@ -179,10 +203,10 @@ export function useDerivedSwapInfo(): {
       currencyBalances,
       parsedAmount,
       inputError,
-      trade,
+      trade: { state: TradeState.VALID, trade: v2TradeAdapter ? v2TradeAdapter : undefined },
       allowedSlippage,
     }),
-    [allowedSlippage, currencies, currencyBalances, inputError, parsedAmount, trade]
+    [allowedSlippage, currencies, currencyBalances, inputError, parsedAmount, v2TradeAdapter]
   )
 }
 

@@ -93,9 +93,6 @@ export default function Pool() {
     [trackedTokenPairs]
   )
 
-  // console.log('[tokenPairsWithLiquidityTokens]:', tokenPairsWithLiquidityTokens)
-  console.log('[trackedTokenPairs]:', trackedTokenPairs)
-
   const liquidityTokens = useMemo(
     () => tokenPairsWithLiquidityTokens.map((tpwlt) => tpwlt.liquidityToken),
     [tokenPairsWithLiquidityTokens]

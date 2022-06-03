@@ -79,6 +79,10 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     USDT_POLYGON,
     WETH_POLYGON,
   ],
+  [SupportedChainId.KCC_TEST]: [
+    ...WRAPPED_NATIVE_CURRENCIES_ONLY[SupportedChainId.KCC_TEST],
+    USDC[SupportedChainId.KCC_TEST],
+  ],
 }
 export const ADDITIONAL_BASES: { [chainId: number]: { [tokenAddress: string]: Token[] } } = {
   [SupportedChainId.MAINNET]: {
