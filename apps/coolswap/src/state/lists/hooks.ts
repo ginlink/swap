@@ -5,13 +5,45 @@ import sortByListPriority from 'utils/listSort'
 
 import BROKEN_LIST from '../../constants/tokenLists/broken.tokenlist.json'
 import UNSUPPORTED_TOKEN_LIST from '../../constants/tokenLists/unsupported.tokenlist.json'
+import DEFAULT_LOCAL_TOKEN_LIST from '../../constants/tokenLists/swap_list.json'
+
 import { AppState } from '../index'
 import { UNSUPPORTED_LIST_URLS } from './../../constants/lists'
+import { TokenList } from '@uniswap/token-lists'
+import { WrappedTokenInfo } from './wrappedTokenInfo'
 
 export type TokenAddressMap = ChainTokenMap
 
 type Mutable<T> = {
   -readonly [P in keyof T]: Mutable<T[P]>
+}
+
+const listCache: WeakMap<TokenList, TokenAddressMap> | null =
+  typeof WeakMap !== 'undefined' ? new WeakMap<TokenList, TokenAddressMap>() : null
+
+export function listToTokenMap(list: TokenList): TokenAddressMap {
+  const result = listCache?.get(list)
+  if (result) return result
+
+  const map = list.tokens.reduce<TokenAddressMap>((tokenMap, tokenInfo) => {
+    const token = new WrappedTokenInfo(tokenInfo, list)
+    if (tokenMap[token.chainId]?.[token.address] !== undefined) {
+      console.error(new Error(`Duplicate token! ${token.address}`))
+      return tokenMap
+    }
+    return {
+      ...tokenMap,
+      [token.chainId]: {
+        ...tokenMap[token.chainId],
+        [token.address]: {
+          token,
+          list,
+        },
+      },
+    }
+  }, {})
+  listCache?.set(list, map)
+  return map
 }
 
 export function useAllLists(): AppState['lists']['byUrl'] {
@@ -82,11 +114,14 @@ export function useInactiveListUrls(): string[] {
   )
 }
 
+const DEFAULT_LOCAL_TOKEN_MAP = listToTokenMap(DEFAULT_LOCAL_TOKEN_LIST)
+
 // get all the tokens from active lists, combine with local default tokens
 export function useCombinedActiveList(): TokenAddressMap {
   const activeListUrls = useActiveListUrls()
   const activeTokens = useCombinedTokenMapFromUrls(activeListUrls)
-  return activeTokens
+  // return activeTokens
+  return combineMaps(activeTokens, DEFAULT_LOCAL_TOKEN_MAP)
 }
 
 // list of tokens not supported on interface for various reasons, used to show warnings and prevent swaps and adds

@@ -122,6 +122,13 @@ export const USDC: { [chainId in SupportedChainId]: Token } = {
   [SupportedChainId.RINKEBY]: USDC_RINKEBY,
   [SupportedChainId.KOVAN]: USDC_KOVAN,
   [SupportedChainId.ROPSTEN]: USDC_ROPSTEN,
+  [SupportedChainId.KCC_TEST]: new Token(
+    SupportedChainId.KCC_TEST,
+    '0x1153335a3c0f3c2036d239f3a378aa149101d569',
+    18,
+    'USDC',
+    'USDC'
+  ),
 }
 export const DAI_POLYGON = new Token(
   SupportedChainId.POLYGON,

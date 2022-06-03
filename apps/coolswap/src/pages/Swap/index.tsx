@@ -148,6 +148,8 @@ export default function Swap({ history }: RouteComponentProps) {
     [trade, tradeState]
   )
 
+  // console.log('[trade]:', trade)
+
   const fiatValueInput = useUSDCValue(trade?.inputAmount)
   const fiatValueOutput = useUSDCValue(trade?.outputAmount)
   const priceImpact = useMemo(

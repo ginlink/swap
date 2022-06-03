@@ -16,10 +16,17 @@ export const MULTICALL_ADDRESS: AddressMap = {
   ]),
   [SupportedChainId.ARBITRUM_ONE]: '0xadF885960B47eA2CD9B55E6DAc6B42b7Cb2806dB',
   [SupportedChainId.ARBITRUM_RINKEBY]: '0xa501c031958F579dB7676fF1CE78AD305794d579',
+  [SupportedChainId.KCC_TEST]: '0x01577220667D80Bf1C555Ab4f06768312b4cDbf8',
 }
-export const V2_FACTORY_ADDRESSES: AddressMap = constructSameAddressMap(V2_FACTORY_ADDRESS)
+export const V2_FACTORY_ADDRESSES: AddressMap = {
+  ...constructSameAddressMap(V2_FACTORY_ADDRESS),
+  [SupportedChainId.KCC_TEST]: V2_FACTORY_ADDRESS,
+}
 
-export const V2_ROUTER_ADDRESS: AddressMap = constructSameAddressMap('0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D')
+export const V2_ROUTER_ADDRESS: AddressMap = {
+  ...constructSameAddressMap('0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D'),
+  [SupportedChainId.KCC_TEST]: '0xB493638903016751fe5A5Ca61080A19D9af1793a',
+}
 export const V3_ROUTER_ADDRESS: AddressMap = constructSameAddressMap('0xE592427A0AEce92De3Edee1F18E0157C05861564', [
   SupportedChainId.OPTIMISM,
   SupportedChainId.OPTIMISTIC_KOVAN,

@@ -18,6 +18,7 @@ import {
   sETH2,
   SWISE,
   TRIBE,
+  USDC,
   USDC_ARBITRUM,
   USDC_MAINNET,
   USDC_OPTIMISM,
@@ -174,6 +175,10 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
     USDC_MAINNET,
     USDT,
     WBTC,
+  ],
+  [SupportedChainId.KCC_TEST]: [
+    ...WRAPPED_NATIVE_CURRENCIES_ONLY[SupportedChainId.KCC_TEST],
+    USDC[SupportedChainId.KCC_TEST],
   ],
 }
 export const PINNED_PAIRS: { readonly [chainId: number]: [Token, Token][] } = {
