@@ -97,7 +97,7 @@ export default function SurveyPopup() {
             </RowFixed>
           </ExternalLink>
           <ThemedText.Black style={{ zIndex: Z_INDEX.fixed }} fontWeight={400} fontSize="12px" color={theme.black}>
-            <Trans>Take a 10 minute survey to help us improve your experience in the Uniswap app.</Trans>
+            <Trans>Take a 10 minute survey to help us improve your experience in the Coolswap app.</Trans>
           </ThemedText.Black>
         </Wrapper>
       )}

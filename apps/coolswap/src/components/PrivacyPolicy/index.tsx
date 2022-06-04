@@ -49,7 +49,7 @@ const StyledLinkOut = styled(ArrowDown)`
 const EXTERNAL_APIS = [
   {
     name: 'Auto Router',
-    description: <Trans>The app fetches the optimal trade route from a Uniswap Labs server.</Trans>,
+    description: <Trans>The app fetches the optimal trade route from a Coolswap Labs server.</Trans>,
   },
   {
     name: 'Infura',
@@ -129,7 +129,7 @@ export function PrivacyPolicy() {
                 <AutoRow gap="4px">
                   <Info size={20} />
                   <ThemedText.Main fontSize={14} color={'primaryText1'}>
-                    <Trans>Uniswap Labs&apos; Terms of Service</Trans>
+                    <Trans>Coolswap Labs&apos; Terms of Service</Trans>
                   </ThemedText.Main>
                 </AutoRow>
                 <StyledLinkOut size={20} />

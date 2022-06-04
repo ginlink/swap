@@ -1,8 +1,8 @@
 {
   "background_color": "#fff",
   "display": "standalone",
-  "homepage_url": "https://app.uniswap.org",
-  "providedBy": { "name": "Uniswap", "url": "https://uniswap.org" },
+  "homepage_url": "https://swap.gincool.com",
+  "providedBy": { "name": "Coolswap", "url": "https://swap.gincool.com" },
   "icons": [
     {
       "src": "./images/192x192_App_Icon.png",

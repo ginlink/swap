@@ -4,12 +4,11 @@ import { L2_CHAIN_IDS } from 'constants/chains'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import JSBI from 'jsbi'
 import { useContext, useMemo } from 'react'
-import { ChevronsRight } from 'react-feather'
 import { Link } from 'react-router-dom'
 import { Text } from 'rebass'
 import styled, { ThemeContext } from 'styled-components/macro'
 
-import { ButtonOutlined, ButtonPrimary, ButtonSecondary } from '../../components/Button'
+import { ButtonPrimary, ButtonSecondary } from '../../components/Button'
 import Card from '../../components/Card'
 import { AutoColumn } from '../../components/Column'
 import { CardBGImage, CardNoise, CardSection, DataCard } from '../../components/earn/styled'
@@ -247,7 +246,7 @@ export default function Pool() {
                         />
                       )
                   )}
-                  <RowFixed justify="center" style={{ width: '100%' }}>
+                  {/* <RowFixed justify="center" style={{ width: '100%' }}>
                     <ButtonOutlined
                       as={Link}
                       to="/migrate/v2"
@@ -263,7 +262,7 @@ export default function Pool() {
                       <ChevronsRight size={16} style={{ marginRight: '8px' }} />
                       <Trans>Migrate Liquidity to V3</Trans>
                     </ButtonOutlined>
-                  </RowFixed>
+                  </RowFixed> */}
                 </>
               ) : (
                 <EmptyProposals>

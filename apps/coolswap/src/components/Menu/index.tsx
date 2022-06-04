@@ -7,19 +7,7 @@ import { useActiveLocale } from 'hooks/useActiveLocale'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useLocationLinkProps } from 'hooks/useLocationLinkProps'
 import React, { useEffect, useRef, useState } from 'react'
-import {
-  BookOpen,
-  Check,
-  ChevronLeft,
-  Coffee,
-  FileText,
-  Globe,
-  HelpCircle,
-  Info,
-  MessageCircle,
-  Moon,
-  Sun,
-} from 'react-feather'
+import { Check, ChevronLeft, Globe, Moon, Sun } from 'react-feather'
 import { Link } from 'react-router-dom'
 import { useDarkModeManager } from 'state/user/hooks'
 import styled, { css } from 'styled-components/macro'
@@ -69,7 +57,7 @@ const StyledMenuButton = styled.button`
 
 const UNIbutton = styled(ButtonPrimary)`
   background-color: ${({ theme }) => theme.bg3};
-  background: radial-gradient(174.47% 188.91% at 1.84% 0%, #ff007a 0%, #2172e5 100%), #edeef2;
+  background: radial-gradient(174.47% 188.91% at 1.84% 0%, rgba(0, 188, 212, 1) 0%, #e53935 100%), #edeef2;
   border: none;
 `
 
@@ -213,8 +201,6 @@ export default function Menu() {
   const open = useModalOpen(ApplicationModal.MENU)
   const toggleMenu = useToggleModal(ApplicationModal.MENU)
   useOnClickOutside(node, open ? toggleMenu : undefined)
-  const togglePrivacyPolicy = useToggleModal(ApplicationModal.PRIVACY_POLICY)
-  const openClaimModal = useToggleModal(ApplicationModal.ADDRESS_CLAIM)
   const showUNIClaimOption = Boolean(!!account && !!chainId && !L2_CHAIN_IDS.includes(chainId))
 
   const [darkMode, toggleDarkMode] = useDarkModeManager()
@@ -242,30 +228,6 @@ export default function Menu() {
               default:
                 return (
                   <MenuFlyout>
-                    <MenuItem href="https://uniswap.org/">
-                      <div>
-                        <Trans>About</Trans>
-                      </div>
-                      <Info opacity={0.6} size={16} />
-                    </MenuItem>
-                    <MenuItem href="https://help.uniswap.org/">
-                      <div>
-                        <Trans>Help Center</Trans>
-                      </div>
-                      <HelpCircle opacity={0.6} size={16} />
-                    </MenuItem>
-                    <MenuItem href="https://uniswap.canny.io/feature-requests">
-                      <div>
-                        <Trans>Request Features</Trans>
-                      </div>
-                      <Coffee opacity={0.6} size={16} />
-                    </MenuItem>
-                    <MenuItem href="https://discord.gg/FCfyBSbCU5">
-                      <div>
-                        <Trans>Discord</Trans>
-                      </div>
-                      <MessageCircle opacity={0.6} size={16} />
-                    </MenuItem>
                     <ToggleMenuItem onClick={() => setMenu('lang')}>
                       <div>
                         <Trans>Language</Trans>
@@ -276,27 +238,15 @@ export default function Menu() {
                       <div>{darkMode ? <Trans>Light Theme</Trans> : <Trans>Dark Theme</Trans>}</div>
                       {darkMode ? <Moon opacity={0.6} size={16} /> : <Sun opacity={0.6} size={16} />}
                     </ToggleMenuItem>
-                    <MenuItem href="https://docs.uniswap.org/">
-                      <div>
-                        <Trans>Docs</Trans>
-                      </div>
-                      <BookOpen opacity={0.6} size={16} />
-                    </MenuItem>
-                    <ToggleMenuItem onClick={() => togglePrivacyPolicy()}>
-                      <div>
-                        <Trans>Legal & Privacy</Trans>
-                      </div>
-                      <FileText opacity={0.6} size={16} />
-                    </ToggleMenuItem>
                     {showUNIClaimOption && (
                       <UNIbutton
-                        onClick={openClaimModal}
+                        onClick={() => window.open('https://helper.gincool.com')}
                         padding="8px 16px"
                         width="100%"
                         $borderRadius="12px"
                         mt="0.5rem"
                       >
-                        <Trans>Claim UNI</Trans>
+                        <Trans>Claim Tokens</Trans>
                       </UNIbutton>
                     )}
                   </MenuFlyout>
