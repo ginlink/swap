@@ -38,7 +38,9 @@ export function useEagerConnect() {
         if (isAuthorized) {
           activate(injected, undefined, true).catch((error: Error) => {
             if (error instanceof UnsupportedChainIdError) {
-              setupNetwork(library)
+              setTimeout(() => {
+                setupNetwork(library)
+              }, 0)
             }
             setTried(true)
           })

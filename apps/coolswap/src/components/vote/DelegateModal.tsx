@@ -99,7 +99,7 @@ export default function DelegateModal({ isOpen, onDismiss, title }: VoteModalPro
               <StyledClosed stroke="black" onClick={wrappedOndismiss} />
             </RowBetween>
             <ThemedText.Body>
-              <Trans>Earned UNI tokens represent voting shares in Uniswap governance.</Trans>
+              <Trans>Earned UNI tokens represent voting shares in Coolswap governance.</Trans>
             </ThemedText.Body>
             <ThemedText.Body>
               <Trans>You can either vote on each proposal yourself or delegate your votes to a third party.</Trans>

@@ -37,7 +37,7 @@ export function swapErrorToUserReadableMessage(error: any): ReactNode {
     case 'UniswapV2: K':
       return (
         <Trans>
-          The Uniswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are
+          The Coolswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are
           swapping incorporates custom behavior on transfer.
         </Trans>
       )
@@ -47,14 +47,14 @@ export function swapErrorToUserReadableMessage(error: any): ReactNode {
       return (
         <Trans>
           This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on
-          transfer and rebase tokens are incompatible with Uniswap V3.
+          transfer and rebase tokens are incompatible with Coolswap V3.
         </Trans>
       )
     case 'TF':
       return (
         <Trans>
           The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and
-          rebase tokens are incompatible with Uniswap V3.
+          rebase tokens are incompatible with Coolswap V3.
         </Trans>
       )
     default:
@@ -64,14 +64,14 @@ export function swapErrorToUserReadableMessage(error: any): ReactNode {
           <Trans>
             An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If
             that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer
-            and rebase tokens are incompatible with Uniswap V3.
+            and rebase tokens are incompatible with Coolswap V3.
           </Trans>
         )
       }
       return (
         <Trans>
           Unknown error{reason ? `: "${reason}"` : ''}. Try increasing your slippage tolerance. Note: fee on transfer
-          and rebase tokens are incompatible with Uniswap V3.
+          and rebase tokens are incompatible with Coolswap V3.
         </Trans>
       )
   }
