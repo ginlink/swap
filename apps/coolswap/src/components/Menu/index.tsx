@@ -7,19 +7,7 @@ import { useActiveLocale } from 'hooks/useActiveLocale'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useLocationLinkProps } from 'hooks/useLocationLinkProps'
 import React, { useEffect, useRef, useState } from 'react'
-import {
-  BookOpen,
-  Check,
-  ChevronLeft,
-  Coffee,
-  FileText,
-  Globe,
-  HelpCircle,
-  Info,
-  MessageCircle,
-  Moon,
-  Sun,
-} from 'react-feather'
+import { Check, ChevronLeft, Globe, Moon, Sun } from 'react-feather'
 import { Link } from 'react-router-dom'
 import { useDarkModeManager } from 'state/user/hooks'
 import styled, { css } from 'styled-components/macro'
@@ -213,8 +201,6 @@ export default function Menu() {
   const open = useModalOpen(ApplicationModal.MENU)
   const toggleMenu = useToggleModal(ApplicationModal.MENU)
   useOnClickOutside(node, open ? toggleMenu : undefined)
-  const togglePrivacyPolicy = useToggleModal(ApplicationModal.PRIVACY_POLICY)
-  const openClaimModal = useToggleModal(ApplicationModal.ADDRESS_CLAIM)
   const showUNIClaimOption = Boolean(!!account && !!chainId && !L2_CHAIN_IDS.includes(chainId))
 
   const [darkMode, toggleDarkMode] = useDarkModeManager()
