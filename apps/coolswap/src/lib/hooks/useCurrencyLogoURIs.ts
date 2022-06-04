@@ -1,10 +1,11 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency, Token } from '@uniswap/sdk-core'
 import { SupportedChainId } from 'constants/chains'
 import useHttpLocations from 'hooks/useHttpLocations'
 import { useMemo } from 'react'
 import { WrappedTokenInfo } from 'state/lists/wrappedTokenInfo'
 
 import EthereumLogo from '../../assets/images/ethereum-logo.png'
+import KccLogo from '../../assets/images/kcc-token-logo.png'
 import MaticLogo from '../../assets/svg/matic-token-icon.svg'
 
 type Network = 'ethereum' | 'arbitrum' | 'optimism'
@@ -27,16 +28,22 @@ function getNativeLogoURI(chainId: SupportedChainId = SupportedChainId.MAINNET):
     case SupportedChainId.POLYGON_MUMBAI:
     case SupportedChainId.POLYGON:
       return MaticLogo
+    case SupportedChainId.KCC_TEST:
+      return KccLogo
     default:
       return EthereumLogo
   }
 }
 
-function getTokenLogoURI(address: string, chainId: SupportedChainId = SupportedChainId.MAINNET): string | void {
+function getTokenLogoURI(currency: Token, chainId: SupportedChainId = SupportedChainId.MAINNET): string | void {
+  const { address, symbol } = currency
   const networkName = chainIdToNetworkName(chainId)
   const networksWithUrls = [SupportedChainId.ARBITRUM_ONE, SupportedChainId.MAINNET, SupportedChainId.OPTIMISM]
+  const networksWithUrlsBySymbol = [SupportedChainId.KCC_TEST]
   if (networksWithUrls.includes(chainId)) {
     return `https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/${networkName}/assets/${address}/logo.png`
+  } else if (networksWithUrlsBySymbol.includes(chainId)) {
+    return symbol ? `https://cdn.jsdelivr.net/gh/ginlink/swap-icons@0.1.0/token/${symbol.toLowerCase()}.png` : ''
   }
 }
 
@@ -48,7 +55,7 @@ export default function useCurrencyLogoURIs(currency?: Currency | null): string[
       if (currency.isNative) {
         logoURIs.push(getNativeLogoURI(currency.chainId))
       } else if (currency.isToken) {
-        const logoURI = getTokenLogoURI(currency.address, currency.chainId)
+        const logoURI = getTokenLogoURI(currency, currency.chainId)
         if (logoURI) {
           logoURIs.push(logoURI)
         }

@@ -1,4 +1,5 @@
 import ethereumLogoUrl from 'assets/images/ethereum-logo.png'
+import kccLogoUrl from 'assets/images/kcc-token-logo.png'
 import arbitrumLogoUrl from 'assets/svg/arbitrum_logo.svg'
 import optimismLogoUrl from 'assets/svg/optimistic_ethereum.svg'
 import polygonMaticLogo from 'assets/svg/polygon-matic-logo.svg'
@@ -174,7 +175,7 @@ export const CHAIN_INFO: ChainInfoMap = {
     explorer: 'https://scan-testnet.kcc.network/',
     infoLink: 'https://scan-testnet.kcc.network/',
     label: 'Kcc Testnet',
-    logoUrl: polygonMaticLogo,
+    logoUrl: kccLogoUrl,
     nativeCurrency: { name: 'tKCS Token', symbol: 'tKCS', decimals: 18 },
   },
 }
