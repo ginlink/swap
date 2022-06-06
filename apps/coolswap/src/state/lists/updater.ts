@@ -1,6 +1,5 @@
 import { getVersionUpgrade, minVersionBump, VersionUpgrade } from '@uniswap/token-lists'
-import { SupportedChainId } from 'constants/chains'
-import { ARBITRUM_LIST, OPTIMISM_LIST, UNSUPPORTED_LIST_URLS } from 'constants/lists'
+import { UNSUPPORTED_LIST_URLS } from 'constants/lists'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import useInterval from 'lib/hooks/useInterval'
 import { useCallback, useEffect } from 'react'
@@ -9,11 +8,11 @@ import { useAllLists } from 'state/lists/hooks'
 
 import { useFetchListCallback } from '../../hooks/useFetchListCallback'
 import useIsWindowVisible from '../../hooks/useIsWindowVisible'
-import { acceptListUpdate, enableList } from './actions'
+import { acceptListUpdate } from './actions'
 import { useActiveListUrls } from './hooks'
 
 export default function Updater(): null {
-  const { chainId, library } = useActiveWeb3React()
+  const { library } = useActiveWeb3React()
   const dispatch = useAppDispatch()
   const isWindowVisible = useIsWindowVisible()
 
@@ -29,14 +28,6 @@ export default function Updater(): null {
     )
   }, [fetchList, isWindowVisible, lists])
 
-  useEffect(() => {
-    if (chainId && [SupportedChainId.OPTIMISM, SupportedChainId.OPTIMISTIC_KOVAN].includes(chainId)) {
-      dispatch(enableList(OPTIMISM_LIST))
-    }
-    if (chainId && [SupportedChainId.ARBITRUM_ONE, SupportedChainId.ARBITRUM_RINKEBY].includes(chainId)) {
-      dispatch(enableList(ARBITRUM_LIST))
-    }
-  }, [chainId, dispatch])
   // fetch all lists every 10 minutes, but only after we initialize library
   useInterval(fetchAllListsCallback, library ? 1000 * 60 * 10 : null)
 

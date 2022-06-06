@@ -45,7 +45,7 @@ function getTokenLogoURI(currency: Token, chainId: SupportedChainId = SupportedC
   const { address, symbol } = currency
   const networkName = chainIdToNetworkName(chainId)
   const networksWithUrls = [SupportedChainId.ARBITRUM_ONE, SupportedChainId.MAINNET, SupportedChainId.OPTIMISM]
-  const networksWithUrlsBySymbol = [SupportedChainId.KCC_TEST]
+  const networksWithUrlsBySymbol = [SupportedChainId.KCC_TEST, SupportedChainId.BSC_TEST, SupportedChainId.HUOBI_TEST]
   if (networksWithUrls.includes(chainId)) {
     return `https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/${networkName}/assets/${address}/logo.png`
   } else if (networksWithUrlsBySymbol.includes(chainId)) {
@@ -55,6 +55,7 @@ function getTokenLogoURI(currency: Token, chainId: SupportedChainId = SupportedC
 
 export default function useCurrencyLogoURIs(currency?: Currency | null): string[] {
   const locations = useHttpLocations(currency instanceof WrappedTokenInfo ? currency.logoURI : undefined)
+
   return useMemo(() => {
     const logoURIs = [...locations]
     if (currency) {
