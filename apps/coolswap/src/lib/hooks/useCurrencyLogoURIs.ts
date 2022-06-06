@@ -1,7 +1,7 @@
 import { Currency, Token } from '@uniswap/sdk-core'
 import { SupportedChainId } from 'constants/chains'
 import useHttpLocations from 'hooks/useHttpLocations'
-import { useEffect, useMemo } from 'react'
+import { useMemo } from 'react'
 import { WrappedTokenInfo } from 'state/lists/wrappedTokenInfo'
 
 import EthereumLogo from '../../assets/images/ethereum-logo.png'
@@ -55,10 +55,6 @@ function getTokenLogoURI(currency: Token, chainId: SupportedChainId = SupportedC
 
 export default function useCurrencyLogoURIs(currency?: Currency | null): string[] {
   const locations = useHttpLocations(currency instanceof WrappedTokenInfo ? currency.logoURI : undefined)
-
-  useEffect(() => {
-    console.log('[currency]:', currency instanceof WrappedTokenInfo, currency)
-  }, [currency])
 
   return useMemo(() => {
     const logoURIs = [...locations]
