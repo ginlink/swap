@@ -16,6 +16,8 @@ export const STABLECOIN_AMOUNT_OUT: { [chainId: number]: CurrencyAmount<Token> }
   [SupportedChainId.OPTIMISM]: CurrencyAmount.fromRawAmount(DAI_OPTIMISM, 10_000e18),
   [SupportedChainId.POLYGON]: CurrencyAmount.fromRawAmount(USDC_POLYGON, 10_000e6),
   [SupportedChainId.KCC_TEST]: CurrencyAmount.fromRawAmount(USDC[SupportedChainId.KCC_TEST], 10_000e6),
+  [SupportedChainId.BSC_TEST]: CurrencyAmount.fromRawAmount(USDC[SupportedChainId.BSC_TEST], 10_000e6),
+  [SupportedChainId.HUOBI_TEST]: CurrencyAmount.fromRawAmount(USDC[SupportedChainId.HUOBI_TEST], 10_000e6),
 }
 
 /**
