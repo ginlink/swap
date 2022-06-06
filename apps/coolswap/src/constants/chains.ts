@@ -18,6 +18,8 @@ export enum SupportedChainId {
   POLYGON_MUMBAI = 80001,
 
   KCC_TEST = 322,
+  HUOBI_TEST = 256,
+  BSC_TEST = 97,
 }
 
 export const CHAIN_IDS_TO_NAMES = {
@@ -33,12 +35,18 @@ export const CHAIN_IDS_TO_NAMES = {
   [SupportedChainId.OPTIMISM]: 'optimism',
   [SupportedChainId.OPTIMISTIC_KOVAN]: 'optimistic_kovan',
   [SupportedChainId.KCC_TEST]: 'kcc_test',
+  [SupportedChainId.HUOBI_TEST]: 'huobi_test',
+  [SupportedChainId.BSC_TEST]: 'bsc_test',
 }
 
 /**
  * Array of all the supported chain IDs
  */
-export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = [SupportedChainId.KCC_TEST] as SupportedChainId[]
+export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = [
+  SupportedChainId.KCC_TEST,
+  SupportedChainId.HUOBI_TEST,
+  SupportedChainId.BSC_TEST,
+] as SupportedChainId[]
 
 export const SUPPORTED_GAS_ESTIMATE_CHAIN_IDS = [
   SupportedChainId.MAINNET,

@@ -84,6 +84,14 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     ...WRAPPED_NATIVE_CURRENCIES_ONLY[SupportedChainId.KCC_TEST],
     USDC[SupportedChainId.KCC_TEST],
   ],
+  [SupportedChainId.HUOBI_TEST]: [
+    ...WRAPPED_NATIVE_CURRENCIES_ONLY[SupportedChainId.HUOBI_TEST],
+    USDC[SupportedChainId.HUOBI_TEST],
+  ],
+  [SupportedChainId.BSC_TEST]: [
+    ...WRAPPED_NATIVE_CURRENCIES_ONLY[SupportedChainId.BSC_TEST],
+    USDC[SupportedChainId.BSC_TEST],
+  ],
 }
 export const ADDITIONAL_BASES: { [chainId: number]: { [tokenAddress: string]: Token[] } } = {
   [SupportedChainId.MAINNET]: {
@@ -175,6 +183,18 @@ export const COMMON_BASES: ChainCurrencyList = {
     USDC[SupportedChainId.KCC_TEST],
     COOL[SupportedChainId.KCC_TEST],
   ],
+  [SupportedChainId.HUOBI_TEST]: [
+    nativeOnChain(SupportedChainId.HUOBI_TEST),
+    WRAPPED_NATIVE_CURRENCY[SupportedChainId.HUOBI_TEST] as Token,
+    USDC[SupportedChainId.HUOBI_TEST],
+    COOL[SupportedChainId.HUOBI_TEST],
+  ],
+  [SupportedChainId.BSC_TEST]: [
+    nativeOnChain(SupportedChainId.BSC_TEST),
+    WRAPPED_NATIVE_CURRENCY[SupportedChainId.BSC_TEST] as Token,
+    USDC[SupportedChainId.BSC_TEST],
+    COOL[SupportedChainId.BSC_TEST],
+  ],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
@@ -190,6 +210,14 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   [SupportedChainId.KCC_TEST]: [
     ...WRAPPED_NATIVE_CURRENCIES_ONLY[SupportedChainId.KCC_TEST],
     USDC[SupportedChainId.KCC_TEST],
+  ],
+  [SupportedChainId.HUOBI_TEST]: [
+    ...WRAPPED_NATIVE_CURRENCIES_ONLY[SupportedChainId.HUOBI_TEST],
+    USDC[SupportedChainId.HUOBI_TEST],
+  ],
+  [SupportedChainId.BSC_TEST]: [
+    ...WRAPPED_NATIVE_CURRENCIES_ONLY[SupportedChainId.BSC_TEST],
+    USDC[SupportedChainId.BSC_TEST],
   ],
 }
 export const PINNED_PAIRS: { readonly [chainId: number]: [Token, Token][] } = {

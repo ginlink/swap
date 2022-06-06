@@ -1,8 +1,8 @@
-import { FACTORY_ADDRESS as V2_FACTORY_ADDRESS } from '@uniswap/v2-sdk'
 import { FACTORY_ADDRESS as V3_FACTORY_ADDRESS } from '@uniswap/v3-sdk'
 
 import { constructSameAddressMap } from '../utils/constructSameAddressMap'
 import { SupportedChainId } from './chains'
+import { v2SdkConfigs } from './v2sdk'
 
 type AddressMap = { [chainId: number]: string }
 
@@ -17,15 +17,20 @@ export const MULTICALL_ADDRESS: AddressMap = {
   [SupportedChainId.ARBITRUM_ONE]: '0xadF885960B47eA2CD9B55E6DAc6B42b7Cb2806dB',
   [SupportedChainId.ARBITRUM_RINKEBY]: '0xa501c031958F579dB7676fF1CE78AD305794d579',
   [SupportedChainId.KCC_TEST]: '0x01577220667D80Bf1C555Ab4f06768312b4cDbf8',
+  [SupportedChainId.HUOBI_TEST]: '0xfaeCc07CfcE85802Bd8Aa226b6683b61646a182E',
+  [SupportedChainId.BSC_TEST]: '0xfBc50fB7f7171D586D5C36c04acC1FCD11808923',
 }
 export const V2_FACTORY_ADDRESSES: AddressMap = {
-  ...constructSameAddressMap(V2_FACTORY_ADDRESS),
-  [SupportedChainId.KCC_TEST]: V2_FACTORY_ADDRESS,
+  [SupportedChainId.KCC_TEST]: v2SdkConfigs[SupportedChainId.KCC_TEST].factoryAddress,
+  [SupportedChainId.HUOBI_TEST]: v2SdkConfigs[SupportedChainId.HUOBI_TEST].factoryAddress,
+  [SupportedChainId.BSC_TEST]: v2SdkConfigs[SupportedChainId.BSC_TEST].factoryAddress,
 }
 
 export const V2_ROUTER_ADDRESS: AddressMap = {
   ...constructSameAddressMap('0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D'),
   [SupportedChainId.KCC_TEST]: '0xB493638903016751fe5A5Ca61080A19D9af1793a',
+  [SupportedChainId.HUOBI_TEST]: '0x582070e7e499b401c093Ea6B63a6FC9066A1Fb26',
+  [SupportedChainId.BSC_TEST]: '0x423FEDe43B47A70caE3A50238bCFED8fAE529Fe7',
 }
 export const V3_ROUTER_ADDRESS: AddressMap = constructSameAddressMap('0xE592427A0AEce92De3Edee1F18E0157C05861564', [
   SupportedChainId.OPTIMISM,

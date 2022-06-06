@@ -1,5 +1,7 @@
 import ethereumLogoUrl from 'assets/images/ethereum-logo.png'
 import kccLogoUrl from 'assets/images/kcc-token-logo.png'
+import HuobiLogoUrl from 'assets/images/huobi-token-logo.png'
+import bscLogoUrl from 'assets/images/bsc-token-logo.png'
 import arbitrumLogoUrl from 'assets/svg/arbitrum_logo.svg'
 import optimismLogoUrl from 'assets/svg/optimistic_ethereum.svg'
 import polygonMaticLogo from 'assets/svg/polygon-matic-logo.svg'
@@ -174,8 +176,30 @@ export const CHAIN_INFO: ChainInfoMap = {
     docs: '',
     explorer: 'https://scan-testnet.kcc.network/',
     infoLink: 'https://scan-testnet.kcc.network/',
-    label: 'Kcc Testnet',
+    label: `Kcc Testnet(${SupportedChainId.KCC_TEST})`,
     logoUrl: kccLogoUrl,
     nativeCurrency: { name: 'tKCS Token', symbol: 'tKCS', decimals: 18 },
+  },
+  [SupportedChainId.HUOBI_TEST]: {
+    networkType: NetworkType.L1,
+    blockWaitMsBeforeWarning: ms`10m`,
+    bridge: '',
+    docs: '',
+    explorer: 'https://testnet.hecoinfo.com',
+    infoLink: 'https://testnet.hecoinfo.com',
+    label: `Heco Testnet(${SupportedChainId.HUOBI_TEST})`,
+    logoUrl: HuobiLogoUrl,
+    nativeCurrency: { name: 'tHt Token', symbol: 'tHT', decimals: 18 },
+  },
+  [SupportedChainId.BSC_TEST]: {
+    networkType: NetworkType.L1,
+    blockWaitMsBeforeWarning: ms`10m`,
+    bridge: '',
+    docs: '',
+    explorer: 'https://testnet.bscscan.com/',
+    infoLink: 'https://testnet.bscscan.com/',
+    label: `Bsc Testnet(${SupportedChainId.BSC_TEST})`,
+    logoUrl: bscLogoUrl,
+    nativeCurrency: { name: 'tBnb Token', symbol: 'tBNB', decimals: 18 },
   },
 }

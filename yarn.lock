@@ -6875,10 +6875,10 @@
     "@uniswap/v2-sdk" "^3.0.1"
     "@uniswap/v3-sdk" "^3.7.1"
 
-"@uniswap/sdk-core@^3.0.0-alpha.3", "@uniswap/sdk-core@^3.0.1", "@uniswap/sdk-core@npm:@ginlink/uni-sdk-core@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.npmjs.org/@ginlink/uni-sdk-core/-/uni-sdk-core-0.1.1.tgz#2bcf151c2ec92b539803b69ff218ee8ae94a0dd4"
-  integrity sha512-+KrawJzjOIBd52IkZzwW7Z6RuHqBVGo39Yq/7pGwJ3ER+rrM49SRgAYJvUSKjrZLkSnHi0TZrlekzwSWYiM/sA==
+"@uniswap/sdk-core@^3.0.0-alpha.3", "@uniswap/sdk-core@^3.0.1", "@uniswap/sdk-core@npm:@ginlink/uni-sdk-core@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.npmjs.org/@ginlink/uni-sdk-core/-/uni-sdk-core-0.2.0.tgz#a12efe14e729097c42c0e57e6007ab211b1319fd"
+  integrity sha512-iTH6NGD26x3QuC89gdGSLDpgbikrRinrrDg9MflsPd6+sSftERM2LkOzHXfJzSVBlvGvFi3lJMNIV4BsUmkA2A==
   dependencies:
     "@ethersproject/address" "^5.0.2"
     big.js "^5.2.2"
@@ -6964,10 +6964,10 @@
     "@uniswap/lib" "1.1.1"
     "@uniswap/v2-core" "1.0.0"
 
-"@uniswap/v2-sdk@^3.0.1", "@uniswap/v2-sdk@npm:@ginlink/uni-v2-sdk@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.npmjs.org/@ginlink/uni-v2-sdk/-/uni-v2-sdk-0.1.1.tgz#dad4adfb096d9ce2e639e246917a1d3c3e011f18"
-  integrity sha512-4t9hWApax6ThPbqSRBJIQ3jd5O2oYNRimdJjBDNQgmM6WjJbJ3AgfN5BJQVDiulfFJRwYo9w5NnEb0l8qaAFUA==
+"@uniswap/v2-sdk@^3.0.1", "@uniswap/v2-sdk@npm:@ginlink/uni-v2-sdk@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.npmjs.org/@ginlink/uni-v2-sdk/-/uni-v2-sdk-0.2.0.tgz#e59039a7e0855a5973a89e860b869fe4d562e2e9"
+  integrity sha512-an0Sv9nrMhSE29xSowgejtUapwmu3km4OSeIYjzcnEoAo9GGgdSmxkoSmk1qEbIcP/1uzQRsbB+GdedEmURVpg==
   dependencies:
     "@ethersproject/address" "^5.0.0"
     "@ethersproject/solidity" "^5.0.0"

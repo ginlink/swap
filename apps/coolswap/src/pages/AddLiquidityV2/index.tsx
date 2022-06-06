@@ -181,6 +181,7 @@ export default function AddLiquidity({
       ]
       value = null
     }
+    debugger
 
     setAttemptingTxn(true)
     await estimate(...args, value ? { value } : {})
