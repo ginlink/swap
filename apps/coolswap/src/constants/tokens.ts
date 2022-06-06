@@ -129,11 +129,39 @@ export const USDC: { [chainId in SupportedChainId]: Token } = {
     'USDC',
     'USDC'
   ),
+  [SupportedChainId.HUOBI_TEST]: new Token(
+    SupportedChainId.HUOBI_TEST,
+    '0x31a9AA4c6817121963557ac2360edee6452c08a1',
+    18,
+    'USDC',
+    'USDC'
+  ),
+  [SupportedChainId.BSC_TEST]: new Token(
+    SupportedChainId.BSC_TEST,
+    '0x1d870E0bDF106B8E515Ed0276ACa660c30a58D3A',
+    18,
+    'USDC',
+    'USDC'
+  ),
 }
 export const COOL: { [chainId: number]: Token } = {
   [SupportedChainId.KCC_TEST]: new Token(
     SupportedChainId.KCC_TEST,
     '0x21F1a57A6645A172C8F493D5854f92AAaF59C90A',
+    18,
+    'COOL',
+    'COOL Token'
+  ),
+  [SupportedChainId.HUOBI_TEST]: new Token(
+    SupportedChainId.HUOBI_TEST,
+    '0x57f275ed286EaDb65E3Cc6D9c0C9568D149d6500',
+    18,
+    'COOL',
+    'COOL Token'
+  ),
+  [SupportedChainId.BSC_TEST]: new Token(
+    SupportedChainId.BSC_TEST,
+    '0x77257674DD059fD03339EF68017582285C4C6613',
     18,
     'COOL',
     'COOL Token'

@@ -21,4 +21,6 @@ export const INFURA_NETWORK_URLS: { [key in SupportedChainId]: string } = {
   [SupportedChainId.POLYGON]: `https://polygon-mainnet.infura.io/v3/${INFURA_KEY}`,
   [SupportedChainId.POLYGON_MUMBAI]: `https://polygon-mumbai.infura.io/v3/${INFURA_KEY}`,
   [SupportedChainId.KCC_TEST]: `https://mainnet.infura.io/v3/${INFURA_KEY}`,
+  [SupportedChainId.HUOBI_TEST]: `https://mainnet.infura.io/v3/${INFURA_KEY}`,
+  [SupportedChainId.BSC_TEST]: `https://mainnet.infura.io/v3/${INFURA_KEY}`,
 }

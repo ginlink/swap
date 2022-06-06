@@ -6,6 +6,8 @@ import { WrappedTokenInfo } from 'state/lists/wrappedTokenInfo'
 
 import EthereumLogo from '../../assets/images/ethereum-logo.png'
 import KccLogo from '../../assets/images/kcc-token-logo.png'
+import HecoLogo from '../../assets/images/huobi-token-logo.png'
+import BscLogo from '../../assets/images/bsc-token-logo.png'
 import MaticLogo from '../../assets/svg/matic-token-icon.svg'
 
 type Network = 'ethereum' | 'arbitrum' | 'optimism'
@@ -30,6 +32,10 @@ function getNativeLogoURI(chainId: SupportedChainId = SupportedChainId.MAINNET):
       return MaticLogo
     case SupportedChainId.KCC_TEST:
       return KccLogo
+    case SupportedChainId.HUOBI_TEST:
+      return HecoLogo
+    case SupportedChainId.BSC_TEST:
+      return BscLogo
     default:
       return EthereumLogo
   }

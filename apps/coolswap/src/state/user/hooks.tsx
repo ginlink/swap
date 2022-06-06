@@ -298,20 +298,7 @@ export function toV2LiquidityToken([tokenA, tokenB]: [Token, Token]): Token {
   if (tokenA.equals(tokenB)) throw new Error('Tokens cannot be equal')
   if (!V2_FACTORY_ADDRESSES[tokenA.chainId]) throw new Error('No V2 factory address on this chain')
 
-  // const tokenA_1 = new Token(322, '0x1153335a3c0f3c2036d239f3a378aa149101d569', 18, 'USDC')
-  // const tokenB_1 = new Token(322, '0x4b6a673b282442543f81d88c79f4754f42de4993', 18, 'BUSD')
-  // console.log(
-  //   '[computePairAddress]:',
-  //   computePairAddress({
-  //     factoryAddress: '0xF72Ad9009e81181E342153b20e8afe8aD21DA3e7',
-  //     tokenA: tokenA_1,
-  //     tokenB: tokenB_1,
-  //   })
-  // )
-
   const factoryAddress = V2_FACTORY_ADDRESSES[tokenA.chainId]
-
-  // console.log('[factoryAddress]:', factoryAddress, tokenA, tokenB)
 
   return new Token(tokenA.chainId, computePairAddress({ factoryAddress, tokenA, tokenB }), 18, 'UNI-V2', 'Uniswap V2')
 }
