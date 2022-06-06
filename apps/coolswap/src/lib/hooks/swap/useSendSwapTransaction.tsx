@@ -102,6 +102,7 @@ export default function useSendSwapTransaction(
           const firstNoErrorCall = estimatedCalls.find<SwapCallEstimate>(
             (call): call is SwapCallEstimate => !('error' in call)
           )
+
           if (!firstNoErrorCall) throw new Error(t`Unexpected error. Could not estimate gas for the swap.`)
           bestCallOption = firstNoErrorCall
         }

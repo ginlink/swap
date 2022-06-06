@@ -1,7 +1,7 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { SwapRouter, Trade } from '@uniswap/router-sdk'
+import { Protocol, SwapRouter, Trade } from '@uniswap/router-sdk'
 import { Currency, Percent, TradeType } from '@uniswap/sdk-core'
-import { Router as V2SwapRouter, Trade as V2Trade } from '@uniswap/v2-sdk'
+import { Pair, Router as V2SwapRouter, Trade as V2Trade, Route as V2Route } from '@uniswap/v2-sdk'
 import { FeeOptions, SwapRouter as V3SwapRouter, Trade as V3Trade } from '@uniswap/v3-sdk'
 import { SWAP_ROUTER_ADDRESSES, V3_ROUTER_ADDRESS } from 'constants/addresses'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
@@ -49,12 +49,36 @@ export function useSwapCallArguments(
   return useMemo(() => {
     if (!trade || !recipient || !library || !account || !chainId || !deadline) return []
 
-    if (trade instanceof V2Trade) {
+    const trade222 = trade as Trade<Currency, Currency, TradeType>
+
+    const routes = trade222.routes
+
+    const onlyV2Routes = routes ? routes.every((route) => route.protocol === Protocol.V2) : false
+
+    if (trade instanceof V2Trade || onlyV2Routes) {
+      let _trade = trade
+
+      if (trade instanceof V2Trade) {
+        _trade = trade
+      } else {
+        const _trade111 = trade as Trade<Currency, Currency, TradeType>
+
+        const pairs = _trade111.swaps[0].route.pools.filter((pool) => pool instanceof Pair) as Pair[]
+        const v2Route = new V2Route(pairs, trade.inputAmount.currency, trade.outputAmount.currency)
+
+        const newTrade = new V2Trade(
+          v2Route,
+          trade.tradeType === TradeType.EXACT_INPUT ? trade.inputAmount : trade.outputAmount,
+          trade.tradeType
+        )
+        _trade = newTrade
+      }
+
       if (!routerContract) return []
       const swapMethods = []
 
       swapMethods.push(
-        V2SwapRouter.swapCallParameters(trade, {
+        V2SwapRouter.swapCallParameters(_trade, {
           feeOnTransfer: false,
           allowedSlippage,
           recipient,
@@ -64,7 +88,7 @@ export function useSwapCallArguments(
 
       if (trade.tradeType === TradeType.EXACT_INPUT) {
         swapMethods.push(
-          V2SwapRouter.swapCallParameters(trade, {
+          V2SwapRouter.swapCallParameters(_trade, {
             feeOnTransfer: true,
             allowedSlippage,
             recipient,
