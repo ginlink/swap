@@ -5,7 +5,6 @@ import sortByListPriority from 'utils/listSort'
 
 import BROKEN_LIST from '../../constants/tokenLists/broken.tokenlist.json'
 import UNSUPPORTED_TOKEN_LIST from '../../constants/tokenLists/unsupported.tokenlist.json'
-import DEFAULT_LOCAL_TOKEN_LIST from '../../constants/tokenLists/swap_list.json'
 
 import { AppState } from '../index'
 import { UNSUPPORTED_LIST_URLS } from './../../constants/lists'
@@ -114,14 +113,11 @@ export function useInactiveListUrls(): string[] {
   )
 }
 
-const DEFAULT_LOCAL_TOKEN_MAP = listToTokenMap(DEFAULT_LOCAL_TOKEN_LIST)
-
 // get all the tokens from active lists, combine with local default tokens
 export function useCombinedActiveList(): TokenAddressMap {
   const activeListUrls = useActiveListUrls()
   const activeTokens = useCombinedTokenMapFromUrls(activeListUrls)
-  // return activeTokens
-  return combineMaps(activeTokens, DEFAULT_LOCAL_TOKEN_MAP)
+  return activeTokens
 }
 
 // list of tokens not supported on interface for various reasons, used to show warnings and prevent swaps and adds
