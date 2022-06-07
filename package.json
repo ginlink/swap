@@ -1,6 +1,6 @@
 {
   "name": "@ginlink/uilib_monorepo_example",
-  "version": "0.2.1",
+  "version": "0.2.0",
   "description": "",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -21,9 +21,12 @@
     "build:dev:swap": "yarn --cwd apps/coolswap build:dev",
     "build:test:swap": "yarn --cwd apps/coolswap build:test",
     "build:prod:swap": "yarn --cwd apps/coolswap build:prod",
-    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
-    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
-    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags"
+    "release:dry": "standard-version --dry-run",
+    "release": "standard-version",
+    "prerelease": "yarn release -- --prerelease alpha",
+    "release:major": "yarn release -- --release-as major",
+    "release:minor": "yarn release -- --release-as minor",
+    "release:patch": "yarn release -- --release-as patch"
   },
   "repository": {
     "type": "git",
@@ -38,9 +41,9 @@
   "homepage": "https://github.com/ginlink/cool-uilib#readme",
   "devDependencies": {
     "eslint": "^8.15.0",
-    "generate-changelog": "^1.8.0",
     "lerna": "^4.0.0",
     "prettier": "^2.6.2",
+    "standard-version": "^9.5.0",
     "typescript": "^4.6.4"
   },
   "dependencies": {},
