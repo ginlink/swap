@@ -30,7 +30,7 @@
     "contracts:compile": "yarn contracts:compile:abi && yarn contracts:compile:v3",
     "graphql:generate": "graphql-codegen --config codegen.yml",
     "prei18n:extract": "touch src/locales/en-US.po",
-    "i18n:extract": "lingui extract --locale en-US",
+    "i18n:extract": "lingui extract",
     "i18n:compile": "yarn i18n:extract && lingui compile",
     "i18n:pseudo": "lingui extract --locale pseudo && lingui compile",
     "prepare": "yarn contracts:compile && yarn graphql:generate && yarn i18n:compile",
@@ -44,6 +44,7 @@
     "lint": "eslint --fix src/**/**.(ts|tsx)"
   },
   "devDependencies": {
+    "@iconify/react": "^3.1.4",
     "@babel/plugin-transform-runtime": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
