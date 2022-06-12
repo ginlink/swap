@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/ginlink/swap/compare/v0.2.1...v0.2.2) (2022-06-12)
+
+
+### Features
+
+* add common address info ([f1ffd77](https://github.com/ginlink/swap/commit/f1ffd77374d2285c65620a3ead7c1e1bfe5abd1e))
+
+
+### Chore
+
+* add start cmd ([1d94564](https://github.com/ginlink/swap/commit/1d94564569d4e19ad22b4592418b8fab8efa8996))
+* language ([20e1e0a](https://github.com/ginlink/swap/commit/20e1e0ad6bd95a6d2468a1f1cbb7d5b3dadeee4c))
+
 ### [0.2.1](https://github.com/ginlink/swap/compare/v0.2.0...v0.2.1) (2022-06-07)
 
 
