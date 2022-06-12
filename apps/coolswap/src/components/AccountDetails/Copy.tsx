@@ -9,6 +9,7 @@ const CopyIcon = styled(LinkStyledButton)`
   color: ${({ color, theme }) => color || theme.text3};
   flex-shrink: 0;
   display: flex;
+  align-items: center;
   text-decoration: none;
   :hover,
   :active,

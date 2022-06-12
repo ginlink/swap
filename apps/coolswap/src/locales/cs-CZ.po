@@ -117,8 +117,8 @@ msgid "A minimum threshold of 0.25% of the total UNI supply is required to submi
 msgstr "K podání návrhů je nutná minimální hranice 0,25% z celkové nabídky UNI"
 
 #: src/components/Menu/index.tsx
-msgid "About"
-msgstr "O aplikaci"
+#~ msgid "About"
+#~ msgstr "O aplikaci"
 
 #: src/components/swap/SwapModalHeader.tsx
 msgid "Accept"
@@ -139,8 +139,12 @@ msgid "Add"
 msgstr "Přidat"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
-msgid "Add <0/> and <1/> to Uniswap V2"
-msgstr "Přidejte <0/> a <1/> do Uniswap V2"
+msgid "Add <0/> and <1/> to Coolswap V2"
+msgstr ""
+
+#: src/components/AccountDetails/TransactionSummary.tsx
+#~ msgid "Add <0/> and <1/> to Uniswap V2"
+#~ msgstr "Přidejte <0/> a <1/> do Uniswap V2"
 
 #: src/components/vote/DelegateModal.tsx
 msgid "Add Delegate +"
@@ -196,8 +200,12 @@ msgid "Allow high price impact trades and skip the confirm screen. Use at your o
 msgstr "Povolit obchody s vysokým dopadem na cenu a přeskočit obrazovku s potvrzením. Používejte na vlastní nebezpečí."
 
 #: src/pages/Swap/index.tsx
-msgid "Allow the Uniswap Protocol to use your {0}"
-msgstr "Povolit protokolu Uniswap používat váš {0}"
+msgid "Allow the Coolswap Protocol to use your {0}"
+msgstr ""
+
+#: src/pages/Swap/index.tsx
+#~ msgid "Allow the Uniswap Protocol to use your {0}"
+#~ msgstr "Povolit protokolu Uniswap používat váš {0}"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allowed"
@@ -208,10 +216,13 @@ msgid "Amount"
 msgstr "Částka"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Při pokusu o provedení tohoto swapu došlo k chybě. Možná budete muset zvýšit toleranci skluzu. Pokud to nefunguje, může dojít k nekompatibilitě s tokenem, s nímž obchodujete. Poznámka: Poplatky za tokeny za převody a rebase nejsou kompatibilní s Uniswap V3."
+msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Coolswap V3."
+msgstr ""
 
-#: src/components/earn/StakingModal.tsx
+#: src/utils/swapErrorToUserReadableMessage.tsx
+#~ msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
+#~ msgstr "Při pokusu o provedení tohoto swapu došlo k chybě. Možná budete muset zvýšit toleranci skluzu. Pokud to nefunguje, může dojít k nekompatibilitě s tokenem, s nímž obchodujete. Poznámka: Poplatky za tokeny za převody a rebase nejsou kompatibilní s Uniswap V3."
+
 #: src/pages/RemoveLiquidity/index.tsx
 msgid "Approve"
 msgstr "Schválit"
@@ -261,8 +272,12 @@ msgid "Are you sure?"
 msgstr "Jste si jisti?"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "As a member of the Uniswap community you may claim UNI to be used for voting and governance.<0/><1/><2>Read more about UNI</2>"
-msgstr "Jako člen komunity Uniswap si můžete nárokovat UNI k použití při hlasování a správě věcí veřejných.<0/><1/><2>Přečtěte si více o UNI</2>"
+msgid "As a member of the Coolswap community you may claim UNI to be used for voting and governance.<0/><1/><2>Read more about UNI</2>"
+msgstr ""
+
+#: src/components/claim/ClaimModal.tsx
+#~ msgid "As a member of the Uniswap community you may claim UNI to be used for voting and governance.<0/><1/><2>Read more about UNI</2>"
+#~ msgstr "Jako člen komunity Uniswap si můžete nárokovat UNI k použití při hlasování a správě věcí veřejných.<0/><1/><2>Přečtěte si více o UNI</2>"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "At least {0} {1} and {2} {3} will be refunded to your wallet due to selected price range."
@@ -277,8 +292,8 @@ msgid "Auto Router API"
 msgstr "Auto Router API"
 
 #: src/components/earn/StakingModal.tsx
-msgid "Available to deposit: {0}"
-msgstr "K dispozici k uložení: {0}"
+#~ msgid "Available to deposit: {0}"
+#~ msgstr "K dispozici k uložení: {0}"
 
 #: src/components/WalletModal/PendingView.tsx
 msgid "Back to wallet selection"
@@ -329,8 +344,12 @@ msgid "By adding this list you are implicitly trusting that the data is correct.
 msgstr "Přidáním tohoto seznamu implicitně vyjadřujete důvěru v to, že data jsou správná. Seznam může vytvořit kdokoli, včetně vytváření falešných verzí existujících seznamů a seznamů, které prohlašují, že reprezentují projekty, které žádný seznam nemají."
 
 #: src/components/WalletModal/index.tsx
-msgid "By connecting a wallet, you agree to Uniswap Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the Uniswap <1>Protocol Disclaimer</1>."
-msgstr "Připojením peněženky souhlasíte s <0>podmínkami služby</0> a potvrzujete, že jste si přečetli a rozumíte prohlášení o vyloučení odpovědnosti za protokol <1></1>."
+msgid "By connecting a wallet, you agree to Coolswap Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the Coolswap <1>Protocol Disclaimer</1>."
+msgstr ""
+
+#: src/components/WalletModal/index.tsx
+#~ msgid "By connecting a wallet, you agree to Uniswap Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the Uniswap <1>Protocol Disclaimer</1>."
+#~ msgstr "Připojením peněženky souhlasíte s <0>podmínkami služby</0> a potvrzujete, že jste si přečetli a rozumíte prohlášení o vyloučení odpovědnosti za protokol <1></1>."
 
 #: src/pages/Vote/styled.tsx
 msgid "Canceled"
@@ -341,8 +360,8 @@ msgid "Change"
 msgstr "Změnit"
 
 #: src/components/Header/index.tsx
-msgid "Charts"
-msgstr "Grafy"
+#~ msgid "Charts"
+#~ msgstr "Grafy"
 
 #: src/components/Header/ChainConnectivityWarning.tsx
 msgid "Check network status"
@@ -352,8 +371,6 @@ msgstr "Zkontrolujte stav sítě"
 msgid "Check out our v3 LP walkthrough and migration guides."
 msgstr "Podívejte se na naše průvodce v3 LP a migrační průvodce."
 
-#: src/components/earn/ClaimRewardModal.tsx
-#: src/components/earn/ClaimRewardModal.tsx
 #: src/pages/Earn/Manage.tsx
 msgid "Claim"
 msgstr "Nárokovat"
@@ -362,8 +379,11 @@ msgstr "Nárokovat"
 msgid "Claim <0/> for {0}"
 msgstr "Získejte <0/> za {0}"
 
-#: src/components/Header/index.tsx
 #: src/components/Menu/index.tsx
+msgid "Claim Tokens"
+msgstr ""
+
+#: src/components/Header/index.tsx
 #: src/components/claim/AddressClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
@@ -392,8 +412,8 @@ msgstr "Nárokováno"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Claimed UNI!"
-msgstr "Nárokováno UNI!"
+#~ msgid "Claimed UNI!"
+#~ msgstr "Nárokováno UNI!"
 
 #: src/components/claim/ClaimModal.tsx
 msgid "Claimed!"
@@ -410,8 +430,8 @@ msgstr "Nárokování UNI"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Claiming {0} UNI"
-msgstr "Nárokování {0} UNI"
+#~ msgid "Claiming {0} UNI"
+#~ msgstr "Nárokování {0} UNI"
 
 #: src/pages/AddLiquidity/index.tsx
 msgid "Clear All"
@@ -490,7 +510,6 @@ msgid "Confirm transaction in wallet"
 msgstr "Potvrďte transakci v peněžence"
 
 #: src/components/Web3Status/index.tsx
-#: src/components/earn/ClaimRewardModal.tsx
 #: src/pages/AddLiquidity/index.tsx
 #: src/pages/AddLiquidityV2/index.tsx
 #: src/pages/RemoveLiquidity/index.tsx
@@ -505,7 +524,6 @@ msgid "Connect Wallet"
 msgstr "Připojit peněženku"
 
 #: src/components/WalletModal/index.tsx
-#: src/components/earn/UnstakingModal.tsx
 #: src/pages/Pool/index.tsx
 msgid "Connect a wallet"
 msgstr "Připojit peněženku"
@@ -529,6 +547,30 @@ msgstr "Propojeno s {name}"
 #: src/components/WalletModal/PendingView.tsx
 msgid "Connecting..."
 msgstr "Spojovací..."
+
+#: src/pages/Vote/Landing.tsx
+msgid "Coolswap Governance"
+msgstr ""
+
+#: src/components/PrivacyPolicy/index.tsx
+msgid "Coolswap Labs' Terms of Service"
+msgstr ""
+
+#: src/components/SwitchLocaleLink/index.tsx
+msgid "Coolswap available in: <0>{0}</0>"
+msgstr ""
+
+#: src/components/vote/ProposalEmptyState.tsx
+msgid "Coolswap governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
+msgstr ""
+
+#: src/pages/Earn/index.tsx
+msgid "Coolswap liquidity mining"
+msgstr ""
+
+#: src/pages/MigrateV2/MigrateV2Pair.tsx
+msgid "Coolswap migration contract↗"
+msgstr ""
 
 #: src/components/AccountDetails/Copy.tsx
 msgid "Copied"
@@ -607,8 +649,6 @@ msgid "Delegating votes"
 msgstr "Delegování hlasů"
 
 #: src/components/earn/PoolCard.tsx
-#: src/components/earn/StakingModal.tsx
-#: src/components/earn/StakingModal.tsx
 #: src/pages/Earn/Manage.tsx
 msgid "Deposit"
 msgstr "Vklad"
@@ -630,20 +670,24 @@ msgid "Deposit tokens to the {label} network."
 msgstr "Vložte tokeny do sítě {label}"
 
 #: src/pages/Earn/index.tsx
-msgid "Deposit your Liquidity Provider tokens to receive UNI, the Uniswap protocol governance token."
-msgstr "Uložte své žetony poskytovatele likvidity, abyste dostali UNI, žeton správy protokolu Uniswap."
+msgid "Deposit your Liquidity Provider tokens to receive UNI, the Coolswap protocol governance token."
+msgstr ""
+
+#: src/pages/Earn/index.tsx
+#~ msgid "Deposit your Liquidity Provider tokens to receive UNI, the Uniswap protocol governance token."
+#~ msgstr "Uložte své žetony poskytovatele likvidity, abyste dostali UNI, žeton správy protokolu Uniswap."
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Deposited liquidity:"
-msgstr "Uložená likvidita:"
+#~ msgid "Deposited liquidity:"
+#~ msgstr "Uložená likvidita:"
 
 #: src/components/earn/StakingModal.tsx
-msgid "Deposited {0} UNI-V2"
-msgstr "Uloženo {0} UNI-V2"
+#~ msgid "Deposited {0} UNI-V2"
+#~ msgstr "Uloženo {0} UNI-V2"
 
 #: src/components/earn/StakingModal.tsx
-msgid "Depositing Liquidity"
-msgstr "Probíhá ukládání likvidity"
+#~ msgid "Depositing Liquidity"
+#~ msgstr "Probíhá ukládání likvidity"
 
 #: src/pages/Vote/VotePage.tsx
 msgid "Description"
@@ -662,24 +706,28 @@ msgid "Disconnect"
 msgstr "Odpojit"
 
 #: src/components/Menu/index.tsx
-msgid "Discord"
-msgstr "Discord"
+#~ msgid "Discord"
+#~ msgstr "Discord"
 
 #: src/components/TransactionConfirmationModal/index.tsx
 msgid "Dismiss"
 msgstr "Zamítnout"
 
 #: src/components/Menu/index.tsx
-msgid "Docs"
-msgstr "Dokumenty"
+#~ msgid "Docs"
+#~ msgstr "Dokumenty"
 
 #: src/pages/MigrateV2/index.tsx
 msgid "Don’t see one of your v2 positions? <0>Import it.</0>"
 msgstr "Nevidíte některou ze svých pozic v2? <0>Importujte ji.</0>"
 
 #: src/components/vote/DelegateModal.tsx
-msgid "Earned UNI tokens represent voting shares in Uniswap governance."
-msgstr "Získané žetony UNI představují hlasovací podíly ve správě Uniswap."
+msgid "Earned UNI tokens represent voting shares in Coolswap governance."
+msgstr ""
+
+#: src/components/vote/DelegateModal.tsx
+#~ msgid "Earned UNI tokens represent voting shares in Uniswap governance."
+#~ msgstr "Získané žetony UNI představují hlasovací podíly ve správě Uniswap."
 
 #: src/components/FeeSelector/index.tsx
 msgid "Edit"
@@ -705,8 +753,6 @@ msgstr "Zadejte platné procento skluzu"
 msgid "Enter an address to trigger a UNI claim. If the address has any claimable UNI it will be sent to them on submission."
 msgstr "Chcete-li spustit nárokování UNI, zadejte adresu. Jestliže bude mít adresa nějaké nárokovatelné UNI, bude jim po odeslání posláno."
 
-#: src/components/earn/ClaimRewardModal.tsx
-#: src/components/earn/UnstakingModal.tsx
 #: src/state/burn/hooks.tsx
 #: src/state/mint/hooks.tsx
 #: src/state/mint/v3/hooks.tsx
@@ -784,12 +830,26 @@ msgid "Expired"
 msgstr "Vypršela"
 
 #: src/pages/Pool/CTACards.tsx
-msgid "Explore Uniswap Analytics."
-msgstr "Prozkoumejte Uniswap Analytics."
+msgid "Explore Coolswap Analytics."
+msgstr ""
+
+#: src/pages/Pool/CTACards.tsx
+#~ msgid "Explore Uniswap Analytics."
+#~ msgstr "Prozkoumejte Uniswap Analytics."
+
+#: src/pages/Swap/data.tsx
+#: src/pages/Swap/data.tsx
+#: src/pages/Swap/data.tsx
+msgid "FactoryV2"
+msgstr ""
 
 #: src/components/Popups/FailedNetworkSwitchPopup.tsx
-msgid "Failed to switch networks from the Uniswap Interface. In order to use Uniswap on {0}, you must change the network in your wallet."
-msgstr "Nepodařilo se přepnout sítě z rozhraní Uniswap. Abyste mohli používat Uniswap na {0}, musíte změnit síť ve své peněžence."
+msgid "Failed to switch networks from the Coolswap Interface. In order to use Coolswap on {0}, you must change the network in your wallet."
+msgstr ""
+
+#: src/components/Popups/FailedNetworkSwitchPopup.tsx
+#~ msgid "Failed to switch networks from the Uniswap Interface. In order to use Uniswap on {0}, you must change the network in your wallet."
+#~ msgstr "Nepodařilo se přepnout sítě z rozhraní Uniswap. Abyste mohli používat Uniswap na {0}, musíte změnit síť ve své peněžence."
 
 #: src/components/PositionPreview/index.tsx
 msgid "Fee Tier"
@@ -808,8 +868,12 @@ msgid "For"
 msgstr "Pro"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "For each pool shown below, click migrate to remove your liquidity from Uniswap V2 and deposit it into Uniswap V3."
-msgstr "Pro každý níže zobrazený fond klikněte na tlačítko migrovat, abyste mohli odstranit svou likviditu z Uniswap V2 a uložit ji do Uniswap V3."
+msgid "For each pool shown below, click migrate to remove your liquidity from Coolswap V2 and deposit it into Coolswap V3."
+msgstr ""
+
+#: src/pages/MigrateV2/index.tsx
+#~ msgid "For each pool shown below, click migrate to remove your liquidity from Uniswap V2 and deposit it into Uniswap V3."
+#~ msgstr "Pro každý níže zobrazený fond klikněte na tlačítko migrovat, abyste mohli odstranit svou likviditu z Uniswap V2 a uložit ji do Uniswap V3."
 
 #: src/pages/Swap/index.tsx
 msgid "From"
@@ -832,7 +896,6 @@ msgid "Get support on Discord"
 msgstr "Získejte podporu o Discord"
 
 #: src/components/Header/NetworkSelector.tsx
-#: src/components/Menu/index.tsx
 msgid "Help Center"
 msgstr "Centrum nápovědy"
 
@@ -963,7 +1026,6 @@ msgstr "Zjistěte více o poskytování likvidity"
 msgid "Learn more"
 msgstr "Zjistěte více"
 
-#: src/components/Menu/index.tsx
 #: src/components/PrivacyPolicy/index.tsx
 #: src/components/WalletModal/index.tsx
 msgid "Legal & Privacy"
@@ -1060,15 +1122,14 @@ msgstr "Jídelní lístek"
 
 #: src/components/PositionCard/Sushi.tsx
 #: src/components/PositionCard/V2.tsx
-#: src/components/PositionCard/index.tsx
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 #: src/pages/Pool/index.tsx
 msgid "Migrate"
 msgstr "Migrovat"
 
 #: src/pages/Pool/v2.tsx
-msgid "Migrate Liquidity to V3"
-msgstr "Migrovat likviditu na V3"
+#~ msgid "Migrate Liquidity to V3"
+#~ msgstr "Migrovat likviditu na V3"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 #: src/pages/MigrateV2/index.tsx
@@ -1076,8 +1137,12 @@ msgid "Migrate V2 Liquidity"
 msgstr "Migrovat likviditu V2"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "Migrate your liquidity tokens from Uniswap V2 to Uniswap V3."
-msgstr "Migrujte své žetony likvidity z Uniswap V2 do Uniswap V3."
+msgid "Migrate your liquidity tokens from Coolswap V2 to Coolswap V3."
+msgstr ""
+
+#: src/pages/MigrateV2/index.tsx
+#~ msgid "Migrate your liquidity tokens from Uniswap V2 to Uniswap V3."
+#~ msgstr "Migrujte své žetony likvidity z Uniswap V2 do Uniswap V3."
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Migrate {0}/{1} liquidity to V3"
@@ -1375,13 +1440,17 @@ msgstr "Ve frontě"
 msgid "Rates"
 msgstr "Sazby"
 
+#: src/pages/Vote/Landing.tsx
+msgid "Read more about Coolswap governance"
+msgstr ""
+
 #: src/pages/Earn/index.tsx
 msgid "Read more about UNI"
 msgstr "Přečtěte si více o UNI"
 
 #: src/pages/Vote/Landing.tsx
-msgid "Read more about Uniswap governance"
-msgstr "Přečtěte si více o správě Uniswap"
+#~ msgid "Read more about Uniswap governance"
+#~ msgstr "Přečtěte si více o správě Uniswap"
 
 #: src/pages/Pool/v2.tsx
 msgid "Read more about providing liquidity"
@@ -1438,14 +1507,20 @@ msgid "Removing {0} {1} and{2} {3}"
 msgstr "Odebírání {0} {1} a{2} {3}"
 
 #: src/components/Menu/index.tsx
-msgid "Request Features"
-msgstr "Vyžádejte si funkce"
+#~ msgid "Request Features"
+#~ msgstr "Vyžádejte si funkce"
 
 #: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/TransactionConfirmationModal/index.tsx
 #: src/pages/CreateProposal/ProposalSubmissionModal.tsx
 msgid "Return"
 msgstr "Návrat"
+
+#: src/pages/Swap/data.tsx
+#: src/pages/Swap/data.tsx
+#: src/pages/Swap/data.tsx
+msgid "RouterV2"
+msgstr ""
 
 #: src/components/SearchModal/CurrencySearch.tsx
 msgid "Search name or paste address"
@@ -1593,8 +1668,12 @@ msgid "Swapping {0} {1} for {2} {3}"
 msgstr "Výměna {0} {1} za {2} {3}"
 
 #: src/components/Popups/SurveyPopup.tsx
-msgid "Take a 10 minute survey to help us improve your experience in the Uniswap app."
-msgstr "Udělejte si 10minutový průzkum, který nám pomůže zlepšit vaši zkušenost s aplikací Uniswap."
+msgid "Take a 10 minute survey to help us improve your experience in the Coolswap app."
+msgstr ""
+
+#: src/components/Popups/SurveyPopup.tsx
+#~ msgid "Take a 10 minute survey to help us improve your experience in the Uniswap app."
+#~ msgstr "Udělejte si 10minutový průzkum, který nám pomůže zlepšit vaši zkušenost s aplikací Uniswap."
 
 #: src/components/WalletModal/index.tsx
 msgid "Tally"
@@ -1605,16 +1684,24 @@ msgid "Tell us what you think ↗"
 msgstr "Řekněte nám, co si myslíte ↗"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "Thanks for being part of the Uniswap community <0/>"
-msgstr "Děkujeme, že jste součástí komunity Uniswap <0/>"
+msgid "Thanks for being part of the Coolswap community <0/>"
+msgstr ""
+
+#: src/components/Popups/ClaimPopup.tsx
+#~ msgid "Thanks for being part of the Uniswap community <0/>"
+#~ msgstr "Děkujeme, že jste součástí komunity Uniswap <0/>"
 
 #: src/components/FeeSelector/index.tsx
 msgid "The % you will earn in fees."
 msgstr "Procento, které získáte na poplatcích."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The Uniswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
-msgstr "Konstanta Uniswap x*y=k nebyla swapem splněna. To obvykle znamená, že jeden z žetonů, které prohazujete, zahrnuje vlastní chování při přenosu."
+msgid "The Coolswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
+msgstr ""
+
+#: src/utils/swapErrorToUserReadableMessage.tsx
+#~ msgid "The Uniswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
+#~ msgstr "Konstanta Uniswap x*y=k nebyla swapem splněna. To obvykle znamená, že jeden z žetonů, které prohazujete, zahrnuje vlastní chování při přenosu."
 
 #: src/components/swap/AdvancedSwapDetails.tsx
 msgid "The amount you expect to receive at the current market price. You may receive less or more if the market price changes while your transaction is pending."
@@ -1629,8 +1716,12 @@ msgid "The app fetches on-chain data and constructs contract calls with an Infur
 msgstr "Aplikace načítá data v řetězci a vytváří smluvní volání pomocí Infura API."
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "The app fetches the optimal trade route from a Uniswap Labs server."
-msgstr "Aplikace načte optimální obchodní cestu ze serveru Uniswap Labs."
+msgid "The app fetches the optimal trade route from a Coolswap Labs server."
+msgstr ""
+
+#: src/components/PrivacyPolicy/index.tsx
+#~ msgid "The app fetches the optimal trade route from a Uniswap Labs server."
+#~ msgstr "Aplikace načte optimální obchodní cestu ze serveru Uniswap Labs."
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "The app logs anonymized usage statistics in order to improve over time."
@@ -1685,8 +1776,12 @@ msgid "The output token cannot be transferred. There may be an issue with the ou
 msgstr "Výstupní žeton nelze přenést. Možná je s výstupním žetonem nějaký problém."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Výstupní žeton nelze přenést. Může dojít k problému s výstupním žetonem. Poznámka: Poplatky za žetony za převody a rebase nejsou kompatibilní s Uniswap V3."
+msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Coolswap V3."
+msgstr ""
+
+#: src/utils/swapErrorToUserReadableMessage.tsx
+#~ msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
+#~ msgstr "Výstupní žeton nelze přenést. Může dojít k problému s výstupním žetonem. Poznámka: Poplatky za žetony za převody a rebase nejsou kompatibilní s Uniswap V3."
 
 #: src/components/Badge/RangeBadge.tsx
 msgid "The price of this pool is outside of your selected range. Your position is not currently earning fees."
@@ -1709,8 +1804,12 @@ msgid "There is no liquidity data."
 msgstr "Neexistují žádné údaje o likviditě."
 
 #: src/components/ConnectedAccountBlocked/index.tsx
-msgid "This address is blocked on the Uniswap Labs interface because it is associated with one or more"
-msgstr "Tato adresa je v rozhraní Uniswap Labs blokována, protože je přidružena k jedné nebo více"
+msgid "This address is blocked on the Coolswap Labs interface because it is associated with one or more"
+msgstr ""
+
+#: src/components/ConnectedAccountBlocked/index.tsx
+#~ msgid "This address is blocked on the Uniswap Labs interface because it is associated with one or more"
+#~ msgstr "Tato adresa je v rozhraní Uniswap Labs blokována, protože je přidružena k jedné nebo více"
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "This app uses the following third-party APIs:"
@@ -1729,16 +1828,24 @@ msgid "This token doesn't appear on the active token list(s). Make sure this is 
 msgstr "Tento žeton není na seznamech aktivních žetonů. Ujistěte se, že toto je ten žeton, který chcete obchodovat."
 
 #: src/components/SearchModal/BlockedToken.tsx
-msgid "This token is not supported in the Uniswap Labs app"
-msgstr "Tento token není podporován v aplikaci Uniswap Labs"
+msgid "This token is not supported in the Coolswap Labs app"
+msgstr ""
+
+#: src/components/SearchModal/BlockedToken.tsx
+#~ msgid "This token is not supported in the Uniswap Labs app"
+#~ msgstr "Tento token není podporován v aplikaci Uniswap Labs"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "This tool will safely migrate your {0} liquidity to V3. The process is completely trustless thanks to the"
 msgstr "Tento nástroj bezpečně migruje vaši {0} likviditu do V3. Proces je zcela bez důvěry, a to díky"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Tato transakce nebude úspěšná z důvodu cenového pohybu. Zkuste zvýšit toleranci skluzu. Poznámka: Poplatky za žetony za převody a rebase nejsou kompatibilní s Uniswap V3."
+msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Coolswap V3."
+msgstr ""
+
+#: src/utils/swapErrorToUserReadableMessage.tsx
+#~ msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
+#~ msgstr "Tato transakce nebude úspěšná z důvodu cenového pohybu. Zkuste zvýšit toleranci skluzu. Poznámka: Poplatky za žetony za převody a rebase nejsou kompatibilní s Uniswap V3."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
 msgid "This transaction will not succeed either due to price movement or fee on transfer. Try increasing your slippage tolerance."
@@ -1793,9 +1900,6 @@ msgstr "Nastavení transakcí"
 
 #: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/TransactionConfirmationModal/index.tsx
-#: src/components/earn/ClaimRewardModal.tsx
-#: src/components/earn/StakingModal.tsx
-#: src/components/earn/UnstakingModal.tsx
 #: src/components/vote/DelegateModal.tsx
 #: src/components/vote/VoteModal.tsx
 msgid "Transaction Submitted"
@@ -1831,8 +1935,12 @@ msgid "UNI has arrived"
 msgstr "UNI dorazila"
 
 #: src/pages/Vote/Landing.tsx
-msgid "UNI tokens represent voting shares in Uniswap governance. You can vote on each proposal yourself or delegate your votes to a third party."
-msgstr "Žetony UNI představují hlasovací podíly ve správě Uniswap. O každém návrhu můžete buďto hlasovat sami, nebo můžete delegovat své hlasy na nějakou třetí stranu."
+msgid "UNI tokens represent voting shares in Coolswap governance. You can vote on each proposal yourself or delegate your votes to a third party."
+msgstr ""
+
+#: src/pages/Vote/Landing.tsx
+#~ msgid "UNI tokens represent voting shares in Uniswap governance. You can vote on each proposal yourself or delegate your votes to a third party."
+#~ msgstr "Žetony UNI představují hlasovací podíly ve správě Uniswap. O každém návrhu můžete buďto hlasovat sami, nebo můžete delegovat své hlasy na nějakou třetí stranu."
 
 #: src/pages/RemoveLiquidity/index.tsx
 msgid "UNI {0}/{1} Burned"
@@ -1848,8 +1956,8 @@ msgstr "UNI-V2 {0}-{1}"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Unclaimed UNI"
-msgstr "Nenárokované UNI"
+#~ msgid "Unclaimed UNI"
+#~ msgstr "Nenárokované UNI"
 
 #: src/pages/Pool/PositionPage.tsx
 msgid "Unclaimed fees"
@@ -1868,36 +1976,40 @@ msgid "Unexpected issue with estimating the gas. Please try again."
 msgstr "Neočekávaný problém s odhadem plynu. Prosím zkuste to znovu."
 
 #: src/pages/Vote/Landing.tsx
-msgid "Uniswap Governance"
-msgstr "Správa Uniswap"
+#~ msgid "Uniswap Governance"
+#~ msgstr "Správa Uniswap"
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "Uniswap Labs' Terms of Service"
-msgstr "Podmínky služby Uniswap Labs"
+#~ msgid "Uniswap Labs' Terms of Service"
+#~ msgstr "Podmínky služby Uniswap Labs"
 
 #: src/components/SwitchLocaleLink/index.tsx
-msgid "Uniswap available in: <0>{0}</0>"
-msgstr "Uniswap k dispozici za: <0>{0}</0>"
+#~ msgid "Uniswap available in: <0>{0}</0>"
+#~ msgstr "Uniswap k dispozici za: <0>{0}</0>"
 
 #: src/components/vote/ProposalEmptyState.tsx
-msgid "Uniswap governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
-msgstr "Uniswap governance je k dispozici pouze na vrstvě 1. Přepněte svou síť na síť Ethereum Mainnet a zobrazte návrhy a hlasování."
+#~ msgid "Uniswap governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
+#~ msgstr "Uniswap governance je k dispozici pouze na vrstvě 1. Přepněte svou síť na síť Ethereum Mainnet a zobrazte návrhy a hlasování."
 
 #: src/pages/Earn/index.tsx
-msgid "Uniswap liquidity mining"
-msgstr "Těžba likvidity Uniswap"
+#~ msgid "Uniswap liquidity mining"
+#~ msgstr "Těžba likvidity Uniswap"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "Uniswap migration contract↗"
-msgstr "Migrační kontrakt Uniswap↗"
+#~ msgid "Uniswap migration contract↗"
+#~ msgstr "Migrační kontrakt Uniswap↗"
 
 #: src/components/SearchModal/TokenImportCard.tsx
 msgid "Unknown Source"
 msgstr "Neznámý zdroj"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Neznámá chyba{0}. Zkuste zvýšit toleranci skluzu. Poznámka: Poplatky za žetony za převody a rebase nejsou kompatibilní s Uniswap V3."
+msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Coolswap V3."
+msgstr ""
+
+#: src/utils/swapErrorToUserReadableMessage.tsx
+#~ msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
+#~ msgstr "Neznámá chyba{0}. Zkuste zvýšit toleranci skluzu. Poznámka: Poplatky za žetony za převody a rebase nejsou kompatibilní s Uniswap V3."
 
 #: src/pages/Vote/Landing.tsx
 #: src/pages/Vote/VotePage.tsx
@@ -1943,8 +2055,12 @@ msgid "Update list"
 msgstr "Aktualizovat seznam"
 
 #: src/components/Settings/index.tsx
-msgid "Use the Uniswap Labs API to get faster quotes."
-msgstr "Pomocí rozhraní Uniswap Labs API získáte rychlejší nabídky."
+msgid "Use the Coolswap Labs API to get faster quotes."
+msgstr ""
+
+#: src/components/Settings/index.tsx
+#~ msgid "Use the Uniswap Labs API to get faster quotes."
+#~ msgstr "Pomocí rozhraní Uniswap Labs API získáte rychlejší nabídky."
 
 #: src/components/claim/ClaimModal.tsx
 msgid "User"
@@ -1990,8 +2106,8 @@ msgid "View transaction on Explorer"
 msgstr "Zobrazit transakci v Průzkumníku"
 
 #: src/components/Header/index.tsx
-msgid "Vote"
-msgstr "Hlasovat"
+#~ msgid "Vote"
+#~ msgstr "Hlasovat"
 
 #: src/pages/Vote/VotePage.tsx
 msgid "Vote Against"
@@ -2061,45 +2177,44 @@ msgid "Wallet Address or ENS name"
 msgstr "Adresa peněženky nebo název ENS"
 
 #: src/components/earn/StakingModal.tsx
-msgid "Weekly Rewards"
-msgstr "Týdenní odměny"
+#~ msgid "Weekly Rewards"
+#~ msgstr "Týdenní odměny"
 
 #: src/components/claim/AddressClaimModal.tsx
 msgid "Welcome to team Unicorn :)"
 msgstr "Vítejte v týmu Unicorn :)"
 
 #: src/components/earn/ClaimRewardModal.tsx
-msgid "When you claim without withdrawing your liquidity remains in the mining pool."
-msgstr "Když budete nárokovat, aniž byste vybírali, vaše likvidita zůstává v těžebním fondu."
+#~ msgid "When you claim without withdrawing your liquidity remains in the mining pool."
+#~ msgstr "Když budete nárokovat, aniž byste vybírali, vaše likvidita zůstává v těžebním fondu."
 
 #: src/pages/Earn/Manage.tsx
 msgid "When you withdraw, the contract will automagically claim UNI on your behalf!"
 msgstr "Když budete vybírat, smlouva bude automaticky nárokovat UNI ve váš prospěch!"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "When you withdraw, your UNI is claimed and your liquidity is removed from the mining pool."
-msgstr "Když budete vybírat, vaše UNI budou nárokovány a vaše likvidita bude odstraněna z těžebního fondu."
+#~ msgid "When you withdraw, your UNI is claimed and your liquidity is removed from the mining pool."
+#~ msgstr "Když budete vybírat, vaše UNI budou nárokovány a vaše likvidita bude odstraněna z těžebního fondu."
 
-#: src/components/earn/UnstakingModal.tsx
 #: src/pages/Earn/Manage.tsx
 msgid "Withdraw"
 msgstr "Vybrat"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdraw & Claim"
-msgstr "Vybrat a nárokovat"
+#~ msgid "Withdraw & Claim"
+#~ msgstr "Vybrat a nárokovat"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Withdraw deposited liquidity"
 msgstr "Vybrat uloženou likviditu"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrawing {0} UNI-V2"
-msgstr "Výběr {0} UNI-V2"
+#~ msgid "Withdrawing {0} UNI-V2"
+#~ msgstr "Výběr {0} UNI-V2"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrew UNI-V2!"
-msgstr "UNI-V2 vybráno!"
+#~ msgid "Withdrew UNI-V2!"
+#~ msgstr "UNI-V2 vybráno!"
 
 #: src/pages/Swap/index.tsx
 msgid "Wrap"
@@ -2123,8 +2238,12 @@ msgid "You are creating a pool"
 msgstr "Vytváříte fond"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You are the first liquidity provider for this Uniswap V3 pool. Your liquidity will migrate at the current {0} price."
-msgstr "Jste prvním poskytovatelem likvidity pro tento fond Uniswap V3. Vaše likvidita bude migrovat za aktuální cenu {0}."
+msgid "You are the first liquidity provider for this Coolswap V3 pool. Your liquidity will migrate at the current {0} price."
+msgstr ""
+
+#: src/pages/MigrateV2/MigrateV2Pair.tsx
+#~ msgid "You are the first liquidity provider for this Uniswap V3 pool. Your liquidity will migrate at the current {0} price."
+#~ msgstr "Jste prvním poskytovatelem likvidity pro tento fond Uniswap V3. Vaše likvidita bude migrovat za aktuální cenu {0}."
 
 #: src/pages/AddLiquidityV2/index.tsx
 msgid "You are the first liquidity provider."
@@ -2163,16 +2282,24 @@ msgid "You must connect an account."
 msgstr "Musíte připojit nějaký účet."
 
 #: src/pages/Swap/index.tsx
-msgid "You must give the Uniswap smart contracts permission to use your {0}. You only have to do this once per token."
-msgstr "Musíte chytrým smlouvám Uniswap udělit oprávnění používat Vaše {0}. Toto musíte udělat pouze jednou pro každý žeton."
+msgid "You must give the Coolswap smart contracts permission to use your {0}. You only have to do this once per token."
+msgstr ""
+
+#: src/pages/Swap/index.tsx
+#~ msgid "You must give the Uniswap smart contracts permission to use your {0}. You only have to do this once per token."
+#~ msgstr "Musíte chytrým smlouvám Uniswap udělit oprávnění používat Vaše {0}. Toto musíte udělat pouze jednou pro každý žeton."
 
 #: src/pages/CreateProposal/index.tsx
 msgid "You must have {formattedProposalThreshold} votes to submit a proposal"
 msgstr "K podání nabídky musíte mít {formattedProposalThreshold}"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You should only deposit liquidity into Uniswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
-msgstr "Likviditu byste měli do Uniswap V3 vložit pouze za cenu, o které si myslíte, že je správná. <0/>Jestliže Vám cena připadá nesprávná, můžete buď provést swap k přesunutí ceny, nebo počkat, až to udělá někdo jiný."
+msgid "You should only deposit liquidity into Coolswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
+msgstr ""
+
+#: src/pages/MigrateV2/MigrateV2Pair.tsx
+#~ msgid "You should only deposit liquidity into Uniswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
+#~ msgstr "Likviditu byste měli do Uniswap V3 vložit pouze za cenu, o které si myslíte, že je správná. <0/>Jestliže Vám cena připadá nesprávná, můžete buď provést swap k přesunutí ceny, nebo počkat, až to udělá někdo jiný."
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "You will also collect fees earned from this position."
@@ -2366,15 +2493,14 @@ msgstr "{0} UNI"
 
 #: src/components/earn/PoolCard.tsx
 #: src/components/earn/PoolCard.tsx
-#: src/components/earn/StakingModal.tsx
 #: src/pages/Earn/Manage.tsx
 #: src/pages/Earn/Manage.tsx
 msgid "{0} UNI / week"
 msgstr "{0} UNI / týden"
 
 #: src/components/earn/StakingModal.tsx
-msgid "{0} UNI-V2"
-msgstr "{0} UNI-V2"
+#~ msgid "{0} UNI-V2"
+#~ msgstr "{0} UNI-V2"
 
 #: src/pages/Earn/Manage.tsx
 msgid "{0} UNI-V2 LP tokens available"
@@ -2476,4 +2602,3 @@ msgstr "{tokenB} na {tokenA}"
 #: src/pages/Pool/PositionPage.tsx
 msgid "← Back to Pools Overview"
 msgstr "← Zpět na přehled fondů"
-

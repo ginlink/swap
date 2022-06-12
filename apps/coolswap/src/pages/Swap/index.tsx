@@ -57,6 +57,7 @@ import { maxAmountSpend } from '../../utils/maxAmountSpend'
 import { warningSeverity } from '../../utils/prices'
 import { supportedChainId } from '../../utils/supportedChainId'
 import AppBody from '../AppBody'
+import { SwapInfo } from './SwapInfo'
 
 const AlertWrapper = styled.div`
   max-width: 460px;
@@ -638,6 +639,11 @@ export default function Swap({ history }: RouteComponentProps) {
           </AutoColumn>
         </Wrapper>
       </AppBody>
+
+      <AppBody>
+        <SwapInfo />
+      </AppBody>
+
       <AlertWrapper>
         <NetworkAlert />
       </AlertWrapper>

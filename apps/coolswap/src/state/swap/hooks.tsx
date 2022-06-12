@@ -20,7 +20,6 @@ import { useCurrencyBalances } from '../wallet/hooks'
 import { Field, replaceSwapState, selectCurrency, setRecipient, switchCurrencies, typeInput } from './actions'
 import { SwapState } from './reducer'
 import { useBestV2Trade } from '@/hooks/useBestV2Trade'
-import { Trade as V2Trade } from '@uniswap/v2-sdk'
 
 export function useSwapState(): AppState['swap'] {
   return useAppSelector((state) => state.swap)
