@@ -117,8 +117,8 @@ msgid "A minimum threshold of 0.25% of the total UNI supply is required to submi
 msgstr "Per la presentazione delle proposte è richiesta una soglia minima dello 0,25% della fornitura UNI totale"
 
 #: src/components/Menu/index.tsx
-msgid "About"
-msgstr "Informazioni"
+#~ msgid "About"
+#~ msgstr "Informazioni"
 
 #: src/components/swap/SwapModalHeader.tsx
 msgid "Accept"
@@ -139,8 +139,12 @@ msgid "Add"
 msgstr "Aggiungi"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
-msgid "Add <0/> and <1/> to Uniswap V2"
-msgstr "Aggiungi <0/> e <1/> a Uniswap V2"
+msgid "Add <0/> and <1/> to Coolswap V2"
+msgstr ""
+
+#: src/components/AccountDetails/TransactionSummary.tsx
+#~ msgid "Add <0/> and <1/> to Uniswap V2"
+#~ msgstr "Aggiungi <0/> e <1/> a Uniswap V2"
 
 #: src/components/vote/DelegateModal.tsx
 msgid "Add Delegate +"
@@ -196,8 +200,12 @@ msgid "Allow high price impact trades and skip the confirm screen. Use at your o
 msgstr "Consenti scambi ad alto impatto sui prezzi e salta la schermata di conferma. Usa a tuo rischio."
 
 #: src/pages/Swap/index.tsx
-msgid "Allow the Uniswap Protocol to use your {0}"
-msgstr "Permetti al Protocollo Uniswap di utilizzare il tuo {0}"
+msgid "Allow the Coolswap Protocol to use your {0}"
+msgstr ""
+
+#: src/pages/Swap/index.tsx
+#~ msgid "Allow the Uniswap Protocol to use your {0}"
+#~ msgstr "Permetti al Protocollo Uniswap di utilizzare il tuo {0}"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allowed"
@@ -208,10 +216,13 @@ msgid "Amount"
 msgstr "Importo"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Si è verificato un errore durante il tentativo di eseguire questo scambio. Potrebbe essere necessario aumentare la tolleranza allo slittamento. Se ciò non funziona, potrebbe esserci un'incompatibilità con il token che stai scambiando. Nota: la commissione sui token di trasferimento e rebase non è compatibile con Uniswap V3."
+msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Coolswap V3."
+msgstr ""
 
-#: src/components/earn/StakingModal.tsx
+#: src/utils/swapErrorToUserReadableMessage.tsx
+#~ msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
+#~ msgstr "Si è verificato un errore durante il tentativo di eseguire questo scambio. Potrebbe essere necessario aumentare la tolleranza allo slittamento. Se ciò non funziona, potrebbe esserci un'incompatibilità con il token che stai scambiando. Nota: la commissione sui token di trasferimento e rebase non è compatibile con Uniswap V3."
+
 #: src/pages/RemoveLiquidity/index.tsx
 msgid "Approve"
 msgstr "Approva"
@@ -261,8 +272,12 @@ msgid "Are you sure?"
 msgstr "Sei sicuro?"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "As a member of the Uniswap community you may claim UNI to be used for voting and governance.<0/><1/><2>Read more about UNI</2>"
-msgstr "Come membro della comunità Uniswap puoi pretendere che l'UNI sia usato per votare e la governance.<0/><1/><2>Leggi di più su UNI</2>"
+msgid "As a member of the Coolswap community you may claim UNI to be used for voting and governance.<0/><1/><2>Read more about UNI</2>"
+msgstr ""
+
+#: src/components/claim/ClaimModal.tsx
+#~ msgid "As a member of the Uniswap community you may claim UNI to be used for voting and governance.<0/><1/><2>Read more about UNI</2>"
+#~ msgstr "Come membro della comunità Uniswap puoi pretendere che l'UNI sia usato per votare e la governance.<0/><1/><2>Leggi di più su UNI</2>"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "At least {0} {1} and {2} {3} will be refunded to your wallet due to selected price range."
@@ -277,8 +292,8 @@ msgid "Auto Router API"
 msgstr "API del router automatico"
 
 #: src/components/earn/StakingModal.tsx
-msgid "Available to deposit: {0}"
-msgstr "Disponibile per il deposito: {0}"
+#~ msgid "Available to deposit: {0}"
+#~ msgstr "Disponibile per il deposito: {0}"
 
 #: src/components/WalletModal/PendingView.tsx
 msgid "Back to wallet selection"
@@ -329,8 +344,12 @@ msgid "By adding this list you are implicitly trusting that the data is correct.
 msgstr "Aggiungendo questa lista si suppone implicitamente che i dati siano corretti. Chiunque può creare una lista, tra cui la creazione di versioni false di liste esistenti ed elenchi che affermano di rappresentare progetti che non ne hanno uno."
 
 #: src/components/WalletModal/index.tsx
-msgid "By connecting a wallet, you agree to Uniswap Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the Uniswap <1>Protocol Disclaimer</1>."
-msgstr "Collegando un portafoglio, accetti <0>Termini di servizio</0> di Uniswap Labs e riconosci di aver letto e compreso l'Esonero di responsabilità del protocollo <1></1>."
+msgid "By connecting a wallet, you agree to Coolswap Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the Coolswap <1>Protocol Disclaimer</1>."
+msgstr ""
+
+#: src/components/WalletModal/index.tsx
+#~ msgid "By connecting a wallet, you agree to Uniswap Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the Uniswap <1>Protocol Disclaimer</1>."
+#~ msgstr "Collegando un portafoglio, accetti <0>Termini di servizio</0> di Uniswap Labs e riconosci di aver letto e compreso l'Esonero di responsabilità del protocollo <1></1>."
 
 #: src/pages/Vote/styled.tsx
 msgid "Canceled"
@@ -341,8 +360,8 @@ msgid "Change"
 msgstr "Cambia"
 
 #: src/components/Header/index.tsx
-msgid "Charts"
-msgstr "Grafici"
+#~ msgid "Charts"
+#~ msgstr "Grafici"
 
 #: src/components/Header/ChainConnectivityWarning.tsx
 msgid "Check network status"
@@ -352,8 +371,6 @@ msgstr "Controlla lo stato della rete"
 msgid "Check out our v3 LP walkthrough and migration guides."
 msgstr "Scopri le nostre guide di passaggio v3 LP e di migrazione."
 
-#: src/components/earn/ClaimRewardModal.tsx
-#: src/components/earn/ClaimRewardModal.tsx
 #: src/pages/Earn/Manage.tsx
 msgid "Claim"
 msgstr "Reclama"
@@ -362,8 +379,11 @@ msgstr "Reclama"
 msgid "Claim <0/> for {0}"
 msgstr "Richiedi <0/> per {0}"
 
-#: src/components/Header/index.tsx
 #: src/components/Menu/index.tsx
+msgid "Claim Tokens"
+msgstr ""
+
+#: src/components/Header/index.tsx
 #: src/components/claim/AddressClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
@@ -392,8 +412,8 @@ msgstr "Richiesto"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Claimed UNI!"
-msgstr "UNI Richiesta!"
+#~ msgid "Claimed UNI!"
+#~ msgstr "UNI Richiesta!"
 
 #: src/components/claim/ClaimModal.tsx
 msgid "Claimed!"
@@ -410,8 +430,8 @@ msgstr "Richiesta UNI in corso"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Claiming {0} UNI"
-msgstr "Reclama {0} UNI"
+#~ msgid "Claiming {0} UNI"
+#~ msgstr "Reclama {0} UNI"
 
 #: src/pages/AddLiquidity/index.tsx
 msgid "Clear All"
@@ -490,7 +510,6 @@ msgid "Confirm transaction in wallet"
 msgstr "Conferma transazione nel portafoglio"
 
 #: src/components/Web3Status/index.tsx
-#: src/components/earn/ClaimRewardModal.tsx
 #: src/pages/AddLiquidity/index.tsx
 #: src/pages/AddLiquidityV2/index.tsx
 #: src/pages/RemoveLiquidity/index.tsx
@@ -505,7 +524,6 @@ msgid "Connect Wallet"
 msgstr "Connetti Portafoglio"
 
 #: src/components/WalletModal/index.tsx
-#: src/components/earn/UnstakingModal.tsx
 #: src/pages/Pool/index.tsx
 msgid "Connect a wallet"
 msgstr "Collega un portafoglio"
@@ -529,6 +547,30 @@ msgstr "Connesso con {name}"
 #: src/components/WalletModal/PendingView.tsx
 msgid "Connecting..."
 msgstr "Collegamento..."
+
+#: src/pages/Vote/Landing.tsx
+msgid "Coolswap Governance"
+msgstr ""
+
+#: src/components/PrivacyPolicy/index.tsx
+msgid "Coolswap Labs' Terms of Service"
+msgstr ""
+
+#: src/components/SwitchLocaleLink/index.tsx
+msgid "Coolswap available in: <0>{0}</0>"
+msgstr ""
+
+#: src/components/vote/ProposalEmptyState.tsx
+msgid "Coolswap governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
+msgstr ""
+
+#: src/pages/Earn/index.tsx
+msgid "Coolswap liquidity mining"
+msgstr ""
+
+#: src/pages/MigrateV2/MigrateV2Pair.tsx
+msgid "Coolswap migration contract↗"
+msgstr ""
 
 #: src/components/AccountDetails/Copy.tsx
 msgid "Copied"
@@ -607,8 +649,6 @@ msgid "Delegating votes"
 msgstr "Delegare voti"
 
 #: src/components/earn/PoolCard.tsx
-#: src/components/earn/StakingModal.tsx
-#: src/components/earn/StakingModal.tsx
 #: src/pages/Earn/Manage.tsx
 msgid "Deposit"
 msgstr "Deposito"
@@ -630,20 +670,24 @@ msgid "Deposit tokens to the {label} network."
 msgstr "Deposita i token sulla rete {label}"
 
 #: src/pages/Earn/index.tsx
-msgid "Deposit your Liquidity Provider tokens to receive UNI, the Uniswap protocol governance token."
-msgstr "Deposita i tuoi token del fornitore di liquidità per ricevere l'UNI, il token di governance del protocollo Uniswap."
+msgid "Deposit your Liquidity Provider tokens to receive UNI, the Coolswap protocol governance token."
+msgstr ""
+
+#: src/pages/Earn/index.tsx
+#~ msgid "Deposit your Liquidity Provider tokens to receive UNI, the Uniswap protocol governance token."
+#~ msgstr "Deposita i tuoi token del fornitore di liquidità per ricevere l'UNI, il token di governance del protocollo Uniswap."
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Deposited liquidity:"
-msgstr "Liquidità depositata:"
+#~ msgid "Deposited liquidity:"
+#~ msgstr "Liquidità depositata:"
 
 #: src/components/earn/StakingModal.tsx
-msgid "Deposited {0} UNI-V2"
-msgstr "{0} UNI-V2 depositato"
+#~ msgid "Deposited {0} UNI-V2"
+#~ msgstr "{0} UNI-V2 depositato"
 
 #: src/components/earn/StakingModal.tsx
-msgid "Depositing Liquidity"
-msgstr "Depositare liquidità"
+#~ msgid "Depositing Liquidity"
+#~ msgstr "Depositare liquidità"
 
 #: src/pages/Vote/VotePage.tsx
 msgid "Description"
@@ -662,24 +706,28 @@ msgid "Disconnect"
 msgstr "Disconnessione"
 
 #: src/components/Menu/index.tsx
-msgid "Discord"
-msgstr "Discord"
+#~ msgid "Discord"
+#~ msgstr "Discord"
 
 #: src/components/TransactionConfirmationModal/index.tsx
 msgid "Dismiss"
 msgstr "Ignora"
 
 #: src/components/Menu/index.tsx
-msgid "Docs"
-msgstr "Documenti"
+#~ msgid "Docs"
+#~ msgstr "Documenti"
 
 #: src/pages/MigrateV2/index.tsx
 msgid "Don’t see one of your v2 positions? <0>Import it.</0>"
 msgstr "Non vedi una delle tue posizioni v2? <0>Importala.</0>"
 
 #: src/components/vote/DelegateModal.tsx
-msgid "Earned UNI tokens represent voting shares in Uniswap governance."
-msgstr "I token UNI guadagnati rappresentano le quote di voto nella governance di Uniswap."
+msgid "Earned UNI tokens represent voting shares in Coolswap governance."
+msgstr ""
+
+#: src/components/vote/DelegateModal.tsx
+#~ msgid "Earned UNI tokens represent voting shares in Uniswap governance."
+#~ msgstr "I token UNI guadagnati rappresentano le quote di voto nella governance di Uniswap."
 
 #: src/components/FeeSelector/index.tsx
 msgid "Edit"
@@ -705,8 +753,6 @@ msgstr "Inserisci una percentuale di slittamento valida"
 msgid "Enter an address to trigger a UNI claim. If the address has any claimable UNI it will be sent to them on submission."
 msgstr "Inserisci un indirizzo per attivare un reclamo UNI. Se l'indirizzo ha una qualsiasi UNI che può essere richiesta, verrà inviata loro al momento dell'invio."
 
-#: src/components/earn/ClaimRewardModal.tsx
-#: src/components/earn/UnstakingModal.tsx
 #: src/state/burn/hooks.tsx
 #: src/state/mint/hooks.tsx
 #: src/state/mint/v3/hooks.tsx
@@ -784,12 +830,26 @@ msgid "Expired"
 msgstr "Scaduto"
 
 #: src/pages/Pool/CTACards.tsx
-msgid "Explore Uniswap Analytics."
-msgstr "Esplora Uniswap Analytics."
+msgid "Explore Coolswap Analytics."
+msgstr ""
+
+#: src/pages/Pool/CTACards.tsx
+#~ msgid "Explore Uniswap Analytics."
+#~ msgstr "Esplora Uniswap Analytics."
+
+#: src/pages/Swap/data.tsx
+#: src/pages/Swap/data.tsx
+#: src/pages/Swap/data.tsx
+msgid "FactoryV2"
+msgstr ""
 
 #: src/components/Popups/FailedNetworkSwitchPopup.tsx
-msgid "Failed to switch networks from the Uniswap Interface. In order to use Uniswap on {0}, you must change the network in your wallet."
-msgstr "Impossibile cambiare rete dall'interfaccia Uniswap. Per utilizzare Uniswap su {0}, devi cambiare la rete nel tuo portafoglio."
+msgid "Failed to switch networks from the Coolswap Interface. In order to use Coolswap on {0}, you must change the network in your wallet."
+msgstr ""
+
+#: src/components/Popups/FailedNetworkSwitchPopup.tsx
+#~ msgid "Failed to switch networks from the Uniswap Interface. In order to use Uniswap on {0}, you must change the network in your wallet."
+#~ msgstr "Impossibile cambiare rete dall'interfaccia Uniswap. Per utilizzare Uniswap su {0}, devi cambiare la rete nel tuo portafoglio."
 
 #: src/components/PositionPreview/index.tsx
 msgid "Fee Tier"
@@ -808,8 +868,12 @@ msgid "For"
 msgstr "Per"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "For each pool shown below, click migrate to remove your liquidity from Uniswap V2 and deposit it into Uniswap V3."
-msgstr "Per ogni pool mostrato di seguito, fai clic su Esegui migrazione per rimuovere la liquidità da Uniswap V2 e depositarlo in Uniswap V3."
+msgid "For each pool shown below, click migrate to remove your liquidity from Coolswap V2 and deposit it into Coolswap V3."
+msgstr ""
+
+#: src/pages/MigrateV2/index.tsx
+#~ msgid "For each pool shown below, click migrate to remove your liquidity from Uniswap V2 and deposit it into Uniswap V3."
+#~ msgstr "Per ogni pool mostrato di seguito, fai clic su Esegui migrazione per rimuovere la liquidità da Uniswap V2 e depositarlo in Uniswap V3."
 
 #: src/pages/Swap/index.tsx
 msgid "From"
@@ -832,7 +896,6 @@ msgid "Get support on Discord"
 msgstr "Ottieni supporto su Discord"
 
 #: src/components/Header/NetworkSelector.tsx
-#: src/components/Menu/index.tsx
 msgid "Help Center"
 msgstr "Centro assistenza"
 
@@ -963,7 +1026,6 @@ msgstr "Scopri come fornire liquidità"
 msgid "Learn more"
 msgstr "Scopri di più"
 
-#: src/components/Menu/index.tsx
 #: src/components/PrivacyPolicy/index.tsx
 #: src/components/WalletModal/index.tsx
 msgid "Legal & Privacy"
@@ -1060,15 +1122,14 @@ msgstr "Menù"
 
 #: src/components/PositionCard/Sushi.tsx
 #: src/components/PositionCard/V2.tsx
-#: src/components/PositionCard/index.tsx
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 #: src/pages/Pool/index.tsx
 msgid "Migrate"
 msgstr "Esegui migrazione"
 
 #: src/pages/Pool/v2.tsx
-msgid "Migrate Liquidity to V3"
-msgstr "Migra la liquidità a V3"
+#~ msgid "Migrate Liquidity to V3"
+#~ msgstr "Migra la liquidità a V3"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 #: src/pages/MigrateV2/index.tsx
@@ -1076,8 +1137,12 @@ msgid "Migrate V2 Liquidity"
 msgstr "Migra Liquidità V2"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "Migrate your liquidity tokens from Uniswap V2 to Uniswap V3."
-msgstr "Migra i tuoi token di liquidità da Uniswap V2 a Uniswap V3."
+msgid "Migrate your liquidity tokens from Coolswap V2 to Coolswap V3."
+msgstr ""
+
+#: src/pages/MigrateV2/index.tsx
+#~ msgid "Migrate your liquidity tokens from Uniswap V2 to Uniswap V3."
+#~ msgstr "Migra i tuoi token di liquidità da Uniswap V2 a Uniswap V3."
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Migrate {0}/{1} liquidity to V3"
@@ -1375,13 +1440,17 @@ msgstr "In coda"
 msgid "Rates"
 msgstr "Tariffe"
 
+#: src/pages/Vote/Landing.tsx
+msgid "Read more about Coolswap governance"
+msgstr ""
+
 #: src/pages/Earn/index.tsx
 msgid "Read more about UNI"
 msgstr "Leggi tutto su UNI"
 
 #: src/pages/Vote/Landing.tsx
-msgid "Read more about Uniswap governance"
-msgstr "Per saperne di più sulla governance di Uniswap"
+#~ msgid "Read more about Uniswap governance"
+#~ msgstr "Per saperne di più sulla governance di Uniswap"
 
 #: src/pages/Pool/v2.tsx
 msgid "Read more about providing liquidity"
@@ -1438,14 +1507,20 @@ msgid "Removing {0} {1} and{2} {3}"
 msgstr "Rimozione {0} {1} e{2} {3}"
 
 #: src/components/Menu/index.tsx
-msgid "Request Features"
-msgstr "Funzionalità di richiesta"
+#~ msgid "Request Features"
+#~ msgstr "Funzionalità di richiesta"
 
 #: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/TransactionConfirmationModal/index.tsx
 #: src/pages/CreateProposal/ProposalSubmissionModal.tsx
 msgid "Return"
 msgstr "Ritorno"
+
+#: src/pages/Swap/data.tsx
+#: src/pages/Swap/data.tsx
+#: src/pages/Swap/data.tsx
+msgid "RouterV2"
+msgstr ""
 
 #: src/components/SearchModal/CurrencySearch.tsx
 msgid "Search name or paste address"
@@ -1593,8 +1668,12 @@ msgid "Swapping {0} {1} for {2} {3}"
 msgstr "Scambio di {0} {1} per {2} {3}"
 
 #: src/components/Popups/SurveyPopup.tsx
-msgid "Take a 10 minute survey to help us improve your experience in the Uniswap app."
-msgstr "Partecipa a un sondaggio di 10 minuti per aiutarci a migliorare la tua esperienza nell'app Uniswap."
+msgid "Take a 10 minute survey to help us improve your experience in the Coolswap app."
+msgstr ""
+
+#: src/components/Popups/SurveyPopup.tsx
+#~ msgid "Take a 10 minute survey to help us improve your experience in the Uniswap app."
+#~ msgstr "Partecipa a un sondaggio di 10 minuti per aiutarci a migliorare la tua esperienza nell'app Uniswap."
 
 #: src/components/WalletModal/index.tsx
 msgid "Tally"
@@ -1605,16 +1684,24 @@ msgid "Tell us what you think ↗"
 msgstr "Dicci cosa ne pensi ↗"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "Thanks for being part of the Uniswap community <0/>"
-msgstr "Grazie per far parte della community di Uniswap <0/>"
+msgid "Thanks for being part of the Coolswap community <0/>"
+msgstr ""
+
+#: src/components/Popups/ClaimPopup.tsx
+#~ msgid "Thanks for being part of the Uniswap community <0/>"
+#~ msgstr "Grazie per far parte della community di Uniswap <0/>"
 
 #: src/components/FeeSelector/index.tsx
 msgid "The % you will earn in fees."
 msgstr "La % che guadagnerai in commissioni."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The Uniswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
-msgstr "L'invariante Uniswap x * y = k non è stata soddisfatta con lo scambio. Questo di solito significa che uno dei token che stai scambiando incorpora un comportamento personalizzato durante il trasferimento."
+msgid "The Coolswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
+msgstr ""
+
+#: src/utils/swapErrorToUserReadableMessage.tsx
+#~ msgid "The Uniswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
+#~ msgstr "L'invariante Uniswap x * y = k non è stata soddisfatta con lo scambio. Questo di solito significa che uno dei token che stai scambiando incorpora un comportamento personalizzato durante il trasferimento."
 
 #: src/components/swap/AdvancedSwapDetails.tsx
 msgid "The amount you expect to receive at the current market price. You may receive less or more if the market price changes while your transaction is pending."
@@ -1629,8 +1716,12 @@ msgid "The app fetches on-chain data and constructs contract calls with an Infur
 msgstr "L'app recupera i dati sulla catena e crea chiamate di contratto con un'API Infura."
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "The app fetches the optimal trade route from a Uniswap Labs server."
-msgstr "L'app recupera la rotta commerciale ottimale da un server Uniswap Labs."
+msgid "The app fetches the optimal trade route from a Coolswap Labs server."
+msgstr ""
+
+#: src/components/PrivacyPolicy/index.tsx
+#~ msgid "The app fetches the optimal trade route from a Uniswap Labs server."
+#~ msgstr "L'app recupera la rotta commerciale ottimale da un server Uniswap Labs."
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "The app logs anonymized usage statistics in order to improve over time."
@@ -1685,8 +1776,12 @@ msgid "The output token cannot be transferred. There may be an issue with the ou
 msgstr "Il token di output non può essere trasferito. Potrebbe esserci un problema con il token di output."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Il token di output non può essere trasferito. Potrebbe esserci un problema con il token di output. Nota: la commissione sui token di trasferimento e rebase non è compatibile con Uniswap V3."
+msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Coolswap V3."
+msgstr ""
+
+#: src/utils/swapErrorToUserReadableMessage.tsx
+#~ msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
+#~ msgstr "Il token di output non può essere trasferito. Potrebbe esserci un problema con il token di output. Nota: la commissione sui token di trasferimento e rebase non è compatibile con Uniswap V3."
 
 #: src/components/Badge/RangeBadge.tsx
 msgid "The price of this pool is outside of your selected range. Your position is not currently earning fees."
@@ -1709,8 +1804,12 @@ msgid "There is no liquidity data."
 msgstr "Non ci sono dati sulla liquidità."
 
 #: src/components/ConnectedAccountBlocked/index.tsx
-msgid "This address is blocked on the Uniswap Labs interface because it is associated with one or more"
-msgstr "Questo indirizzo è bloccato sull'interfaccia di Uniswap Labs perché è associato a uno o più"
+msgid "This address is blocked on the Coolswap Labs interface because it is associated with one or more"
+msgstr ""
+
+#: src/components/ConnectedAccountBlocked/index.tsx
+#~ msgid "This address is blocked on the Uniswap Labs interface because it is associated with one or more"
+#~ msgstr "Questo indirizzo è bloccato sull'interfaccia di Uniswap Labs perché è associato a uno o più"
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "This app uses the following third-party APIs:"
@@ -1729,16 +1828,24 @@ msgid "This token doesn't appear on the active token list(s). Make sure this is 
 msgstr "Questo token non viene visualizzato negli elenchi di token attivi. Assicurati che questo sia il token che vuoi scambiare."
 
 #: src/components/SearchModal/BlockedToken.tsx
-msgid "This token is not supported in the Uniswap Labs app"
-msgstr "Questo token non è supportato nell'app Uniswap Labs"
+msgid "This token is not supported in the Coolswap Labs app"
+msgstr ""
+
+#: src/components/SearchModal/BlockedToken.tsx
+#~ msgid "This token is not supported in the Uniswap Labs app"
+#~ msgstr "Questo token non è supportato nell'app Uniswap Labs"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "This tool will safely migrate your {0} liquidity to V3. The process is completely trustless thanks to the"
 msgstr "Questo strumento eseguirà la migrazione in modo sicuro della tua liquidità {0} a V3. Il processo è completamente affidabile grazie alla"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Questa transazione non avrà esito positivo a causa del movimento dei prezzi. Prova ad aumentare la tua tolleranza allo slittamento. Nota: la commissione sui token di trasferimento e rebase non è compatibile con Uniswap V3."
+msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Coolswap V3."
+msgstr ""
+
+#: src/utils/swapErrorToUserReadableMessage.tsx
+#~ msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
+#~ msgstr "Questa transazione non avrà esito positivo a causa del movimento dei prezzi. Prova ad aumentare la tua tolleranza allo slittamento. Nota: la commissione sui token di trasferimento e rebase non è compatibile con Uniswap V3."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
 msgid "This transaction will not succeed either due to price movement or fee on transfer. Try increasing your slippage tolerance."
@@ -1793,9 +1900,6 @@ msgstr "Impostazioni della transazione"
 
 #: src/components/TransactionConfirmationModal/index.tsx
 #: src/components/TransactionConfirmationModal/index.tsx
-#: src/components/earn/ClaimRewardModal.tsx
-#: src/components/earn/StakingModal.tsx
-#: src/components/earn/UnstakingModal.tsx
 #: src/components/vote/DelegateModal.tsx
 #: src/components/vote/VoteModal.tsx
 msgid "Transaction Submitted"
@@ -1831,8 +1935,12 @@ msgid "UNI has arrived"
 msgstr "È arrivata l'UNI"
 
 #: src/pages/Vote/Landing.tsx
-msgid "UNI tokens represent voting shares in Uniswap governance. You can vote on each proposal yourself or delegate your votes to a third party."
-msgstr "I token UNI rappresentano le quote di voto nella governance di Uniswap. Puoi votare su ogni proposta tu stesso o delegare i tuoi voti a terzi."
+msgid "UNI tokens represent voting shares in Coolswap governance. You can vote on each proposal yourself or delegate your votes to a third party."
+msgstr ""
+
+#: src/pages/Vote/Landing.tsx
+#~ msgid "UNI tokens represent voting shares in Uniswap governance. You can vote on each proposal yourself or delegate your votes to a third party."
+#~ msgstr "I token UNI rappresentano le quote di voto nella governance di Uniswap. Puoi votare su ogni proposta tu stesso o delegare i tuoi voti a terzi."
 
 #: src/pages/RemoveLiquidity/index.tsx
 msgid "UNI {0}/{1} Burned"
@@ -1848,8 +1956,8 @@ msgstr "UNI-V2 {0}-{1}"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Unclaimed UNI"
-msgstr "UNI non richiesto"
+#~ msgid "Unclaimed UNI"
+#~ msgstr "UNI non richiesto"
 
 #: src/pages/Pool/PositionPage.tsx
 msgid "Unclaimed fees"
@@ -1868,36 +1976,40 @@ msgid "Unexpected issue with estimating the gas. Please try again."
 msgstr "Problema imprevisto con la stima del gas. Per favore riprova."
 
 #: src/pages/Vote/Landing.tsx
-msgid "Uniswap Governance"
-msgstr "Uniswap Governance"
+#~ msgid "Uniswap Governance"
+#~ msgstr "Uniswap Governance"
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "Uniswap Labs' Terms of Service"
-msgstr "Termini di servizio di Uniswap Labs"
+#~ msgid "Uniswap Labs' Terms of Service"
+#~ msgstr "Termini di servizio di Uniswap Labs"
 
 #: src/components/SwitchLocaleLink/index.tsx
-msgid "Uniswap available in: <0>{0}</0>"
-msgstr "Uniswap disponibile tra: <0>{0}</0>"
+#~ msgid "Uniswap available in: <0>{0}</0>"
+#~ msgstr "Uniswap disponibile tra: <0>{0}</0>"
 
 #: src/components/vote/ProposalEmptyState.tsx
-msgid "Uniswap governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
-msgstr "La governance di Uniswap è disponibile solo su Layer 1. Passa la tua rete a Ethereum Mainnet per visualizzare le proposte e votare."
+#~ msgid "Uniswap governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
+#~ msgstr "La governance di Uniswap è disponibile solo su Layer 1. Passa la tua rete a Ethereum Mainnet per visualizzare le proposte e votare."
 
 #: src/pages/Earn/index.tsx
-msgid "Uniswap liquidity mining"
-msgstr "Uniswap attività minerarie di liquidità"
+#~ msgid "Uniswap liquidity mining"
+#~ msgstr "Uniswap attività minerarie di liquidità"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "Uniswap migration contract↗"
-msgstr "Contratto di migrazione Uniswap↗"
+#~ msgid "Uniswap migration contract↗"
+#~ msgstr "Contratto di migrazione Uniswap↗"
 
 #: src/components/SearchModal/TokenImportCard.tsx
 msgid "Unknown Source"
 msgstr "Fonte sconosciuta"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Errore sconosciuto{0}. Prova ad aumentare la tua tolleranza allo slittamento. Nota: la commissione sui token di trasferimento e rebase non è compatibile con Uniswap V3."
+msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Coolswap V3."
+msgstr ""
+
+#: src/utils/swapErrorToUserReadableMessage.tsx
+#~ msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
+#~ msgstr "Errore sconosciuto{0}. Prova ad aumentare la tua tolleranza allo slittamento. Nota: la commissione sui token di trasferimento e rebase non è compatibile con Uniswap V3."
 
 #: src/pages/Vote/Landing.tsx
 #: src/pages/Vote/VotePage.tsx
@@ -1943,8 +2055,12 @@ msgid "Update list"
 msgstr "Aggiorna elenco"
 
 #: src/components/Settings/index.tsx
-msgid "Use the Uniswap Labs API to get faster quotes."
-msgstr "Utilizza l'API di Uniswap Labs per ottenere preventivi più rapidi."
+msgid "Use the Coolswap Labs API to get faster quotes."
+msgstr ""
+
+#: src/components/Settings/index.tsx
+#~ msgid "Use the Uniswap Labs API to get faster quotes."
+#~ msgstr "Utilizza l'API di Uniswap Labs per ottenere preventivi più rapidi."
 
 #: src/components/claim/ClaimModal.tsx
 msgid "User"
@@ -1990,8 +2106,8 @@ msgid "View transaction on Explorer"
 msgstr "Visualizza transazione su Explorer"
 
 #: src/components/Header/index.tsx
-msgid "Vote"
-msgstr "VOTAZIONI"
+#~ msgid "Vote"
+#~ msgstr "VOTAZIONI"
 
 #: src/pages/Vote/VotePage.tsx
 msgid "Vote Against"
@@ -2061,45 +2177,44 @@ msgid "Wallet Address or ENS name"
 msgstr "Indirizzo portafoglio o nome ENS"
 
 #: src/components/earn/StakingModal.tsx
-msgid "Weekly Rewards"
-msgstr "Ricompense Settimanale"
+#~ msgid "Weekly Rewards"
+#~ msgstr "Ricompense Settimanale"
 
 #: src/components/claim/AddressClaimModal.tsx
 msgid "Welcome to team Unicorn :)"
 msgstr "Benvenuto nel team Unicorn :)"
 
 #: src/components/earn/ClaimRewardModal.tsx
-msgid "When you claim without withdrawing your liquidity remains in the mining pool."
-msgstr "Quando si rivendica senza ritirare la liquidità rimane nel pool minerario."
+#~ msgid "When you claim without withdrawing your liquidity remains in the mining pool."
+#~ msgstr "Quando si rivendica senza ritirare la liquidità rimane nel pool minerario."
 
 #: src/pages/Earn/Manage.tsx
 msgid "When you withdraw, the contract will automagically claim UNI on your behalf!"
 msgstr "Al momento del recesso, il contratto rivendicherà automaticamente UNI per vostro conto!"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "When you withdraw, your UNI is claimed and your liquidity is removed from the mining pool."
-msgstr "Quando si ritira, la vostra UNI viene rivendicata e la vostra liquidità viene rimossa dal pool di estrazione."
+#~ msgid "When you withdraw, your UNI is claimed and your liquidity is removed from the mining pool."
+#~ msgstr "Quando si ritira, la vostra UNI viene rivendicata e la vostra liquidità viene rimossa dal pool di estrazione."
 
-#: src/components/earn/UnstakingModal.tsx
 #: src/pages/Earn/Manage.tsx
 msgid "Withdraw"
 msgstr "Preleva"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdraw & Claim"
-msgstr "Ritira E Rivendica"
+#~ msgid "Withdraw & Claim"
+#~ msgstr "Ritira E Rivendica"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Withdraw deposited liquidity"
 msgstr "Ritira liquidità depositata"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrawing {0} UNI-V2"
-msgstr "Ritiro {0} UNI-V2"
+#~ msgid "Withdrawing {0} UNI-V2"
+#~ msgstr "Ritiro {0} UNI-V2"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrew UNI-V2!"
-msgstr "UNI-V2 ritirato!"
+#~ msgid "Withdrew UNI-V2!"
+#~ msgstr "UNI-V2 ritirato!"
 
 #: src/pages/Swap/index.tsx
 msgid "Wrap"
@@ -2123,8 +2238,12 @@ msgid "You are creating a pool"
 msgstr "Stai creando un pool"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You are the first liquidity provider for this Uniswap V3 pool. Your liquidity will migrate at the current {0} price."
-msgstr "Sei il primo fornitore di liquidità per questo pool di Uniswap V3. La tua liquidità migrerà al prezzo corrente di {0}."
+msgid "You are the first liquidity provider for this Coolswap V3 pool. Your liquidity will migrate at the current {0} price."
+msgstr ""
+
+#: src/pages/MigrateV2/MigrateV2Pair.tsx
+#~ msgid "You are the first liquidity provider for this Uniswap V3 pool. Your liquidity will migrate at the current {0} price."
+#~ msgstr "Sei il primo fornitore di liquidità per questo pool di Uniswap V3. La tua liquidità migrerà al prezzo corrente di {0}."
 
 #: src/pages/AddLiquidityV2/index.tsx
 msgid "You are the first liquidity provider."
@@ -2163,16 +2282,24 @@ msgid "You must connect an account."
 msgstr "Devi collegare un account."
 
 #: src/pages/Swap/index.tsx
-msgid "You must give the Uniswap smart contracts permission to use your {0}. You only have to do this once per token."
-msgstr "Devi dare il permesso agli smart contract Uniswap di utilizzare il tuo {0}. Devi farlo solo una volta per token."
+msgid "You must give the Coolswap smart contracts permission to use your {0}. You only have to do this once per token."
+msgstr ""
+
+#: src/pages/Swap/index.tsx
+#~ msgid "You must give the Uniswap smart contracts permission to use your {0}. You only have to do this once per token."
+#~ msgstr "Devi dare il permesso agli smart contract Uniswap di utilizzare il tuo {0}. Devi farlo solo una volta per token."
 
 #: src/pages/CreateProposal/index.tsx
 msgid "You must have {formattedProposalThreshold} votes to submit a proposal"
 msgstr "Devi avere {formattedProposalThreshold} voti per inviare una proposta"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You should only deposit liquidity into Uniswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
-msgstr "Dovresti depositare solo liquidità in Uniswap V3 ad un prezzo che credi sia corretto. <0/>Se il prezzo sembra errato, puoi fare uno swap per spostare il prezzo o aspettare che qualcun altro lo faccia."
+msgid "You should only deposit liquidity into Coolswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
+msgstr ""
+
+#: src/pages/MigrateV2/MigrateV2Pair.tsx
+#~ msgid "You should only deposit liquidity into Uniswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
+#~ msgstr "Dovresti depositare solo liquidità in Uniswap V3 ad un prezzo che credi sia corretto. <0/>Se il prezzo sembra errato, puoi fare uno swap per spostare il prezzo o aspettare che qualcun altro lo faccia."
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "You will also collect fees earned from this position."
@@ -2366,15 +2493,14 @@ msgstr "{0} UNI"
 
 #: src/components/earn/PoolCard.tsx
 #: src/components/earn/PoolCard.tsx
-#: src/components/earn/StakingModal.tsx
 #: src/pages/Earn/Manage.tsx
 #: src/pages/Earn/Manage.tsx
 msgid "{0} UNI / week"
 msgstr "{0} UNI / settimana"
 
 #: src/components/earn/StakingModal.tsx
-msgid "{0} UNI-V2"
-msgstr "{0} UNI-V2"
+#~ msgid "{0} UNI-V2"
+#~ msgstr "{0} UNI-V2"
 
 #: src/pages/Earn/Manage.tsx
 msgid "{0} UNI-V2 LP tokens available"
@@ -2476,4 +2602,3 @@ msgstr "{tokenB} per {tokenA}"
 #: src/pages/Pool/PositionPage.tsx
 msgid "← Back to Pools Overview"
 msgstr "← Torna alla panoramica delle piscine"
-
