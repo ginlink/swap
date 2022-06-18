@@ -1,6 +1,6 @@
 {
   "name": "@ginlink/uilib_monorepo_example",
-  "version": "0.2.2",
+  "version": "0.2.3-alpha.0",
   "description": "",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
