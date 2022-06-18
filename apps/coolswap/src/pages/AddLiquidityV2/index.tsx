@@ -2,10 +2,11 @@ import { BigNumber } from '@ethersproject/bignumber'
 import { TransactionResponse } from '@ethersproject/providers'
 import { Trans } from '@lingui/macro'
 import { Currency, CurrencyAmount, Percent } from '@uniswap/sdk-core'
+import { computePairAddress, v2SdkConfig } from '@uniswap/v2-sdk'
 import UnsupportedCurrencyFooter from 'components/swap/UnsupportedCurrencyFooter'
 import { SwitchLocaleLink } from 'components/SwitchLocaleLink'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
-import { useCallback, useContext, useState } from 'react'
+import { useCallback, useContext, useMemo, useState } from 'react'
 import { Plus } from 'react-feather'
 import ReactGA from 'react-ga4'
 import { RouteComponentProps } from 'react-router-dom'
@@ -59,6 +60,18 @@ export default function AddLiquidity({
 
   const currencyA = useCurrency(currencyIdA)
   const currencyB = useCurrency(currencyIdB)
+
+  const pairAddress = useMemo(
+    () =>
+      v2SdkConfig.factoryAddress && currencyA && currencyB
+        ? computePairAddress({
+            factoryAddress: v2SdkConfig.factoryAddress,
+            tokenA: currencyA.wrapped,
+            tokenB: currencyB.wrapped,
+          })
+        : undefined,
+    [currencyA, currencyB]
+  )
 
   const wrappedNativeCurrency = chainId ? WRAPPED_NATIVE_CURRENCY[chainId] : undefined
 
@@ -495,6 +508,21 @@ export default function AddLiquidity({
           </AutoColumn>
         </Wrapper>
       </AppBody>
+
+      <AppBody>
+        <div style={{ padding: '16px' }}>
+          <AutoColumn>
+            <div>pairAddress: {pairAddress}</div>
+            <div>
+              token0({currencyA?.symbol}): {currencyA?.wrapped.address}
+            </div>
+            <div>
+              token1({currencyB?.symbol}): {currencyB?.wrapped.address}
+            </div>
+          </AutoColumn>
+        </div>
+      </AppBody>
+
       <SwitchLocaleLink />
 
       {!addIsUnsupported ? (
