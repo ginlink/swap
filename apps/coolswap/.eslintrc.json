@@ -2,5 +2,11 @@
   "extends": [
     "@ginlink/eslint-config",
     "plugin:react/jsx-runtime"
-  ]
+  ],
+  "plugins": [
+    "unused-imports"
+  ],
+  "rules": {
+    "unused-imports/no-unused-imports": "error"
+  }
 }
