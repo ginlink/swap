@@ -23,10 +23,10 @@
     "build:prod:swap": "yarn --cwd apps/coolswap build:prod",
     "release:dry": "standard-version --dry-run",
     "release": "standard-version",
-    "prerelease": "standard-version -- --prerelease alpha",
-    "release:major": "standard-version -- --release-as major",
-    "release:minor": "standard-version -- --release-as minor",
-    "release:patch": "standard-version -- --release-as patch"
+    "release:prerelease": "npm run release -- --prerelease alpha",
+    "release:major": "npm run release -- --release-as major",
+    "release:minor": "npm run release -- --release-as minor",
+    "release:patch": "npm run release -- --release-as patch"
   },
   "repository": {
     "type": "git",
