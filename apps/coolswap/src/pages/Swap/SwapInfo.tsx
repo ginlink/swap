@@ -19,7 +19,7 @@ export function SwapInfo() {
   const [currencyToAdd, setCurrencyToAdd] = useState<Currency>()
   const commonAddressInfo = useCommonAddressInfo()
 
-  const { addToken, success } = useAddTokenToMetamask(currencyToAdd)
+  const { addToken } = useAddTokenToMetamask(currencyToAdd)
 
   useEffect(() => {
     addToken && addToken()
