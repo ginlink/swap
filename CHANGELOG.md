@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.3](https://github.com/ginlink/swap/compare/v0.2.3-alpha.0...v0.2.3) (2022-06-19)
+
+
+### Bug Fixes
+
+* fix web3 error ([7b491f6](https://github.com/ginlink/swap/commit/7b491f6897f60d835bd5eeb88b602d99b34e5d8c))
+
+
+### Style
+
+* add github link to menu ([c2a5a19](https://github.com/ginlink/swap/commit/c2a5a198a5e6fae41d0680689627c54df74def05))
+* add info nav ([e08fbb0](https://github.com/ginlink/swap/commit/e08fbb0c093e4bf828b4f62aa9af0f8558fd9edc))
+* change chart info link ([f231afd](https://github.com/ginlink/swap/commit/f231afd07072910399cbe4e703d378d0ef4b222a))
+
 ### [0.2.3-alpha.0](https://github.com/ginlink/swap/compare/v0.2.2...v0.2.3-alpha.0) (2022-06-18)
 
 
