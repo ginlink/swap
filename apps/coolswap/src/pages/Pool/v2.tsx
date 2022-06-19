@@ -1,3 +1,4 @@
+import { infoLink } from '@/constants/links'
 import { Trans } from '@lingui/macro'
 import { Pair } from '@uniswap/v2-sdk'
 import { L2_CHAIN_IDS } from 'constants/chains'
@@ -223,19 +224,19 @@ export default function Pool() {
                 </EmptyProposals>
               ) : allV2PairsWithLiquidity?.length > 0 || stakingPairs?.length > 0 ? (
                 <>
-                  <ButtonSecondary>
-                    <RowBetween>
-                      <Trans>
-                        <ExternalLink
-                          // href={'https://v2.info.uniswap.org/account/' + account}
-                          href={`#`}
-                        >
-                          Account analytics and accrued fees
-                        </ExternalLink>
-                        <span> ↗ </span>
-                      </Trans>
-                    </RowBetween>
-                  </ButtonSecondary>
+                  {chainId ? (
+                    <ButtonSecondary>
+                      <RowBetween>
+                        <Trans>
+                          <ExternalLink href={`${infoLink[chainId]}/account/${account}`}>
+                            Account analytics and accrued fees
+                          </ExternalLink>
+                          <span> ↗ </span>
+                        </Trans>
+                      </RowBetween>
+                    </ButtonSecondary>
+                  ) : null}
+
                   {v2PairsWithoutStakedAmount.map((v2Pair) => (
                     <FullPositionCard key={v2Pair.liquidityToken.address} pair={v2Pair} />
                   ))}
