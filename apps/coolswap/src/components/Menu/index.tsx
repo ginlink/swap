@@ -1,13 +1,11 @@
 // eslint-disable-next-line no-restricted-imports
 import { t, Trans } from '@lingui/macro'
 import { PrivacyPolicyModal } from 'components/PrivacyPolicy'
-import { L2_CHAIN_IDS } from 'constants/chains'
 import { LOCALE_LABEL, SUPPORTED_LOCALES, SupportedLocale } from 'constants/locales'
 import { useActiveLocale } from 'hooks/useActiveLocale'
-import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useLocationLinkProps } from 'hooks/useLocationLinkProps'
 import React, { useEffect, useRef, useState } from 'react'
-import { Check, ChevronLeft, Globe, Moon, Sun } from 'react-feather'
+import { Check, ChevronLeft, Globe, Moon, Sun, GitHub } from 'react-feather'
 import { Link } from 'react-router-dom'
 import { useDarkModeManager } from 'state/user/hooks'
 import styled, { css } from 'styled-components/macro'
@@ -195,13 +193,10 @@ function LanguageMenu({ close }: { close: () => void }) {
 }
 
 export default function Menu() {
-  const { account, chainId } = useActiveWeb3React()
-
   const node = useRef<HTMLDivElement>()
   const open = useModalOpen(ApplicationModal.MENU)
   const toggleMenu = useToggleModal(ApplicationModal.MENU)
   useOnClickOutside(node, open ? toggleMenu : undefined)
-  const showUNIClaimOption = Boolean(!!account && !!chainId && !L2_CHAIN_IDS.includes(chainId))
 
   const [darkMode, toggleDarkMode] = useDarkModeManager()
 
@@ -238,17 +233,19 @@ export default function Menu() {
                       <div>{darkMode ? <Trans>Light Theme</Trans> : <Trans>Dark Theme</Trans>}</div>
                       {darkMode ? <Moon opacity={0.6} size={16} /> : <Sun opacity={0.6} size={16} />}
                     </ToggleMenuItem>
-                    {showUNIClaimOption && (
-                      <UNIbutton
-                        onClick={() => window.open('https://helper.gincool.com')}
-                        padding="8px 16px"
-                        width="100%"
-                        $borderRadius="12px"
-                        mt="0.5rem"
-                      >
-                        <Trans>Claim Tokens</Trans>
-                      </UNIbutton>
-                    )}
+                    <ToggleMenuItem onClick={() => window.open('https://github.com/ginlink/swap')}>
+                      <div>Github</div>
+                      <GitHub opacity={0.6} size={16} />
+                    </ToggleMenuItem>
+                    <UNIbutton
+                      onClick={() => window.open('https://helper.gincool.com')}
+                      padding="8px 16px"
+                      width="100%"
+                      $borderRadius="12px"
+                      mt="0.5rem"
+                    >
+                      <Trans>Claim Tokens</Trans>
+                    </UNIbutton>
                   </MenuFlyout>
                 )
             }

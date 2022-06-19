@@ -1,3 +1,4 @@
+import { infoLink } from '@/constants/links'
 import { Trans } from '@lingui/macro'
 import { CurrencyAmount, Percent, Token } from '@uniswap/sdk-core'
 import { Pair } from '@uniswap/v2-sdk'
@@ -158,7 +159,7 @@ export function MinimalPositionCard({ pair, showUnwrapped = false, border }: Pos
 }
 
 export default function FullPositionCard({ pair, border, stakedBalance }: PositionCardProps) {
-  const { account } = useActiveWeb3React()
+  const { chainId, account } = useActiveWeb3React()
 
   const currency0 = unwrappedToken(pair.token0)
   const currency1 = unwrappedToken(pair.token1)
@@ -297,17 +298,19 @@ export default function FullPositionCard({ pair, border, stakedBalance }: Positi
               </Text>
             </FixedHeightRow>
 
-            <ButtonSecondary padding="8px" $borderRadius="8px">
-              <ExternalLink
-                style={{ width: '100%', textAlign: 'center' }}
-                // href={`https://v2.info.uniswap.org/account/${account}`}
-                href={`#`}
-              >
-                <Trans>
-                  View accrued fees and analytics<span style={{ fontSize: '11px' }}>↗</span>
-                </Trans>
-              </ExternalLink>
-            </ButtonSecondary>
+            {chainId ? (
+              <ButtonSecondary padding="8px" $borderRadius="8px">
+                <ExternalLink
+                  style={{ width: '100%', textAlign: 'center' }}
+                  href={`${infoLink[chainId]}/account/${account}`}
+                >
+                  <Trans>
+                    View accrued fees and analytics<span style={{ fontSize: '11px' }}>↗</span>
+                  </Trans>
+                </ExternalLink>
+              </ButtonSecondary>
+            ) : null}
+
             {userDefaultPoolBalance && JSBI.greaterThan(userDefaultPoolBalance.quotient, BIG_INT_ZERO) && (
               <RowBetween marginTop="10px">
                 {/* <ButtonPrimary

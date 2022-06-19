@@ -1,3 +1,4 @@
+import { infoLink } from '@/constants/links'
 import { Trans } from '@lingui/macro'
 import useScrollPosition from '@react-hook/window-scroll'
 import { CHAIN_INFO } from 'constants/chainInfo'
@@ -16,7 +17,7 @@ import styled from 'styled-components/macro'
 
 // import { ReactComponent as Logo } from '../../assets/svg/logo.svg'
 import { ReactComponent as Logo } from '../../assets/images/gin.svg'
-import { ThemedText } from '../../theme'
+import { ExternalLink, ThemedText } from '../../theme'
 import ClaimModal from '../claim/ClaimModal'
 import { CardNoise } from '../earn/styled'
 import Menu from '../Menu'
@@ -218,6 +219,34 @@ const StyledNavLink = styled(NavLink).attrs({
   }
 `
 
+const StyledExternalLink = styled(ExternalLink).attrs({
+  activeClassName,
+})<{ isActive?: boolean }>`
+  ${({ theme }) => theme.flexRowNoWrap}
+  align-items: left;
+  border-radius: 3rem;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: ${({ theme }) => theme.text2};
+  font-size: 1rem;
+  width: fit-content;
+  margin: 0 12px;
+  font-weight: 500;
+
+  &.${activeClassName} {
+    border-radius: 14px;
+    font-weight: 600;
+    color: ${({ theme }) => theme.text1};
+  }
+
+  :hover,
+  :focus {
+    color: ${({ theme }) => darken(0.1, theme.text1)};
+    text-decoration: none;
+  }
+`
+
 export default function Header() {
   const { account, chainId } = useActiveWeb3React()
 
@@ -270,10 +299,12 @@ export default function Header() {
             <Trans>Vote</Trans>
           </StyledNavLink>
         )} */}
-        {/* <StyledExternalLink id={`charts-nav-link`} href={infoLink}>
-          <Trans>Charts</Trans>
-          <sup>↗</sup>
-        </StyledExternalLink> */}
+        {chainId ? (
+          <StyledExternalLink id={`charts-nav-link`} href={infoLink[chainId]}>
+            <Trans>Charts</Trans>
+            <sup>↗</sup>
+          </StyledExternalLink>
+        ) : null}
       </HeaderLinks>
 
       <HeaderControls>
