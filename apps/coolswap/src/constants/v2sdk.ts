@@ -13,7 +13,7 @@ export const v2SdkConfigs: {
     initCodeHash: '0x15c4dfb595cfab7511d8e4f6d0a7fb1b28a953422e9d8079effd944a872973fe',
   },
   [SupportedChainId.BSC_TEST]: {
-    factoryAddress: '0xEd5eCBD035efCC275D31f4D799e98EcCA3320080',
-    initCodeHash: '0x15c4dfb595cfab7511d8e4f6d0a7fb1b28a953422e9d8079effd944a872973fe',
+    factoryAddress: '0x4561ee54F45Ef938adbD778E451E111FEb249846',
+    initCodeHash: '0xb3e277d5ddcc75858d4deb1a87f885fa5614a9346d154135c6ffc931138bdae4',
   },
 }
