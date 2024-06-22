@@ -6945,10 +6945,10 @@
     "@uniswap/v2-sdk" "^3.0.1"
     "@uniswap/v3-sdk" "^3.7.1"
 
-"@uniswap/sdk-core@^3.0.0-alpha.3", "@uniswap/sdk-core@^3.0.1", "@uniswap/sdk-core@npm:@ginlink/uni-sdk-core@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.npmmirror.com/@ginlink/uni-sdk-core/-/uni-sdk-core-0.2.0.tgz#a12efe14e729097c42c0e57e6007ab211b1319fd"
-  integrity sha512-iTH6NGD26x3QuC89gdGSLDpgbikrRinrrDg9MflsPd6+sSftERM2LkOzHXfJzSVBlvGvFi3lJMNIV4BsUmkA2A==
+"@uniswap/sdk-core@^3.0.0-alpha.3", "@uniswap/sdk-core@^3.0.1", "@uniswap/sdk-core@npm:@ginlink/uni-sdk-core@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.npmjs.org/@ginlink/uni-sdk-core/-/uni-sdk-core-0.2.2.tgz#c4de0c4ace3a96144b2386f0e390ebde03461526"
+  integrity sha512-fJ4kfHH3jQPdJErb4/bNMPtcXzAb98zFJmuBZCrAfpHBKVVm0Fn8yoNLCQAl+S3z5ntlVtiQoZGS/ZG7IqM4NQ==
   dependencies:
     "@ethersproject/address" "^5.0.2"
     big.js "^5.2.2"

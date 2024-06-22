@@ -138,7 +138,7 @@ export const USDC: { [chainId in SupportedChainId]: Token } = {
   ),
   [SupportedChainId.BSC_TEST]: new Token(
     SupportedChainId.BSC_TEST,
-    '0x1d870E0bDF106B8E515Ed0276ACa660c30a58D3A',
+    '0xfBc69C7780Df7D7F07CF650AC3bc7fF6692F329C',
     18,
     'USDC',
     'USDC'
